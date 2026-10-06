@@ -8,6 +8,9 @@ import { createClient } from "./supabase/server";
 
 export const COOKIE_SESSAO_LOCAL = "sessao_local";
 
+// Completa o login de quem digita só o nome de usuário, sem "@".
+const DOMINIO_DOS_USUARIOS = "@sabrinehc.local";
+
 export type Usuario = { email: string; nome: string };
 
 export async function usuarioAtual(): Promise<Usuario | null> {
@@ -46,7 +49,8 @@ export async function iniciarSessao(email: string, senha: string) {
 
   const supabase = await createClient();
   const { error } = await supabase.auth.signInWithPassword({
-    email,
+    // O Supabase só aceita e-mail: "admin" entra como "admin@sabrinehc.local".
+    email: email.includes("@") ? email : `${email}${DOMINIO_DOS_USUARIOS}`,
     password: senha,
   });
   return !error;
