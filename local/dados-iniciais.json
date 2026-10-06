@@ -1,0 +1,22 @@
+{
+  "usuarios": [
+    {
+      "email": "teste@local.test",
+      "nome": "Usuário de Teste",
+      "senha": "Teste-local-4821"
+    },
+    {
+      "email": "admin",
+      "nome": "Admin",
+      "senha": "admin"
+    }
+  ],
+  "documentos": [
+    {
+      "titulo": "Documento de exemplo",
+      "descricao": "Arquivo de teste do banco local.",
+      "caminho": "exemplo.txt",
+      "categoria": "protocolos"
+    }
+  ]
+}

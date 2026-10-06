@@ -1,0 +1,3655 @@
+[
+ {
+  "g": "G",
+  "n": "Acetilcisteína",
+  "a": "100 mg/mL – ampola 3 mL (Genérico – União Química)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "50–100 mL",
+    "1 hora"
+   ]
+  ],
+  "ta": "2h",
+  "rf": "–",
+  "obs": "Intoxicação por paracetamol: iniciar o quanto antes (ideal em 0–8 h da ingestão).",
+  "pg": 17,
+  "tags": []
+ },
+ {
+  "g": "G",
+  "n": "Albumina Humana 20%",
+  "a": "10 g – frasco 50 mL (Albumina Humana Grifols® – Grifols)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV infusão",
+    "Não necessita diluição",
+    "–",
+    "Não exceder 1–2 mL/min (máx. 30 mL/min na substituição de plasma)"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Não misturar com outros medicamentos, sangue total ou concentrado de hemácias. NÃO diluir com água para injeção (risco de hemólise).",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 17
+ },
+ {
+  "g": "G",
+  "n": "Albumina Humana 20%",
+  "a": "10 g – frasco 50 mL (Alburex® 20 – CSL Behring)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV infusão",
+    "Sem diluição, SG 5% ou SF 0,9%",
+    "–",
+    "Não exceder 1–2 mL/min"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Armazenar a 2–8 °C na embalagem original. NÃO diluir com água para injeção (risco de hemólise). Na troca de plasma, ajustar a taxa à taxa de remoção.",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 17
+ },
+ {
+  "g": "G",
+  "n": "Albumina Humana 20%",
+  "a": "10 g – frasco 50 mL (Blaubimax® – Blau Farmacêutica)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV",
+    "–",
+    "Conforme quadro clínico; sem diluição, promover hidratação se necessário",
+    "–"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Armazenar a 2–25 °C. NÃO diluir com água para injeção (risco de hemólise). Administrar em até 4 h após abertura do frasco; após isso, descartar.",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 18
+ },
+ {
+  "g": "G",
+  "n": "Atropina",
+  "a": "0,25 mg/mL – ampola 1 mL (Atrofarma® – Farmace)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV",
+    "–",
+    "–",
+    "Lento"
+   ],
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "SC",
+    "–",
+    "–",
+    "–"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Fabricante recomenda injeção IV lenta.",
+  "pg": 18,
+  "tags": []
+ },
+ {
+  "g": "G",
+  "n": "Betametasona (dipropionato + fosfato dissódico)",
+  "a": "5 mg/mL + 2 mg/mL – ampola 1 mL (Duoflam® – Cristália)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM / intra-articular / periarticular / intrabursal / intradérmica / intralesional / tecidos moles",
+    "–",
+    "–",
+    "–"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "NÃO indicado para uso IV ou SC.",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 18
+ },
+ {
+  "g": "G",
+  "n": "Bicarbonato de sódio 8,4%",
+  "a": "Ampola 10 mL (Genérico – Farmace)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV",
+    "–",
+    "–",
+    "–"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Somente IV. Usar imediatamente após abertura da ampola.",
+  "pg": 19,
+  "tags": []
+ },
+ {
+  "g": "G",
+  "n": "Bicarbonato de sódio 8,4%",
+  "a": "250 mL (Genérico – Hypofarma)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV",
+    "–",
+    "–",
+    "–"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "–",
+  "pg": 19,
+  "tags": []
+ },
+ {
+  "g": "G",
+  "n": "Biperideno lactato",
+  "a": "5 mg/mL – ampola 1 mL (Cinetol® – Cristália)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "Lento"
+   ],
+   [
+    "IV",
+    "–",
+    "–",
+    "Lento"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Usar imediatamente após aberto. Administrar lentamente (IM e IV).",
+  "pg": 19,
+  "tags": []
+ },
+ {
+  "g": "G",
+  "n": "Bromoprida",
+  "a": "5 mg/mL – ampola 2 mL (Genérico – Wasser Farma)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV direto",
+    "SF 0,9% ou SG 5%",
+    "18 mL",
+    "3–5 min"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "IV lento (≥ 3 min) para evitar ansiedade e sonolência. Contraindicado em gestantes e em pacientes em tratamento de epilepsia.",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 19
+ },
+ {
+  "g": "G",
+  "n": "Cetoprofeno",
+  "a": "100 mg – frasco-ampola (Artrinid® IV – União Química)",
+  "rec": "Cada 100 mg: 5 mL de SF 0,9%",
+  "vias": [
+   [
+    "IV infusão",
+    "SF 0,9%, SG 5% ou SG 10%",
+    "100–150 mL",
+    "20–30 min"
+   ],
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "NÃO administrar IV direto em bolus – risco de flebite. (Apresentação 50 mg/mL ampola 2 mL é de uso exclusivo IM.)",
+  "tags": [
+   "flebite",
+   "alerta"
+  ],
+  "pg": 20,
+  "fleb": "Risco em bolus IV (guia)"
+ },
+ {
+  "g": "G",
+  "n": "Ciclofosfamida",
+  "a": "1000 mg – frasco-ampola (Genuxal® – Baxter)",
+  "rec": "Água para injetáveis 50 mL",
+  "vias": [
+   [
+    "IV",
+    "SF 0,9% ou SG 5%",
+    "–",
+    "–"
+   ]
+  ],
+  "ta": "–",
+  "rf": "24h",
+  "obs": "Após reconstituir, agitar vigorosamente 30–60 s. Usar o mais rápido possível; reconstituída com SF/SG estável 24 h sob refrigeração.",
+  "pg": 20,
+  "tags": [
+   "mav"
+  ]
+ },
+ {
+  "g": "G",
+  "n": "Clonidina",
+  "a": "150 mcg/mL – ampola 1 mL (Clonidin® – Cristália)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "Espinhal",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV direto",
+    "SF 0,9%",
+    "10 mL",
+    "Bolus lento 7–10 min"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9%",
+    "10–500 mL",
+    "–"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "–",
+  "obs": "Bolus direto lento: 7 a 10 minutos.",
+  "pg": 21,
+  "tags": []
+ },
+ {
+  "g": "G",
+  "n": "Dexametasona fosfato dissódico",
+  "a": "4 mg/mL – ampola 2,5 mL (Genérico – Farmace)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV direto",
+    "SF 0,9% ou SG 5%",
+    "20 mL",
+    "Lento, 5–10 min"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "4–10 mg em 50–100 mL",
+    "30 min"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "–",
+  "obs": "–",
+  "pg": 21,
+  "tags": []
+ },
+ {
+  "g": "G",
+  "n": "Diclofenaco sódico",
+  "a": "25 mg/mL – ampola 3 mL (Diclofarma® – Farmace)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Uso EXCLUSIVO IM.",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 21
+ },
+ {
+  "g": "G",
+  "n": "Dipirona",
+  "a": "500 mg/mL – ampola 2 mL (Dipifarma® – Farmace)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV",
+    "SG 5%, SF 0,9% ou RL",
+    "IV direto: 18 mL de diluente + 2 mL da ampola",
+    "Muito lento – não exceder 1 mL/min"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Usar imediatamente após abrir. Paciente deitado e sob supervisão; interromper ao 1º sinal de reação anafilática. Risco de hipotensão.",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 22
+ },
+ {
+  "g": "G",
+  "n": "Droperidol",
+  "a": "2,5 mg/mL – ampola 1 mL (Droperdal® – Cristália)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "50–100 mL",
+    "30–60 min (lento)"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "–",
+  "obs": "Risco de prolongamento do QT (torsade de pointes).",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 22
+ },
+ {
+  "g": "G",
+  "n": "Enoxaparina",
+  "a": "40 mg/0,4 mL, 60 mg/0,6 mL e 80 mg/0,8 mL – seringa (Clexane® – Sanofi)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "SC",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV (bolus)",
+    "SF 0,9% ou SG 5%",
+    "–",
+    "Bolus 30 mg (IAM com supra) – ver bula"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "IV RESTRITO ao IAM com supra de ST, conforme protocolo médico: bolus inicial de 30 mg (0,3 mL) com seringa graduada, desprezando o excesso. Ver bula.",
+  "tags": [
+   "alerta",
+   "mav"
+  ],
+  "pg": 22
+ },
+ {
+  "g": "G",
+  "n": "Escopolamina",
+  "a": "20 mg/mL – ampola 1 mL (Genérico – União Química)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "SC",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV direto",
+    "SF ou SG 5%",
+    "20 mL",
+    "Lento"
+   ],
+   [
+    "IV infusão",
+    "SF ou SG 5%",
+    "50–100 mL",
+    "Lento"
+   ]
+  ],
+  "ta": "8h",
+  "rf": "–",
+  "obs": "–",
+  "pg": 23,
+  "tags": []
+ },
+ {
+  "g": "G",
+  "n": "Escopolamina + Dipirona",
+  "a": "4 mg/mL + 500 mg/mL – ampola 5 mL (Genérico – Farmace)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV direto",
+    "–",
+    "–",
+    "5 min"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9%, SG 5% ou RL",
+    "50 mL",
+    "Não mais que 1 mL/min"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "NUNCA administrar SC. Uso intra-arterial inadvertido pode causar necrose distal.",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 23
+ },
+ {
+  "g": "G",
+  "n": "Fitomenadiona (vitamina K)",
+  "a": "10 mg/mL – ampola 1 mL (Eskavit® – Hipolabor)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "SC",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Altamente fotossensível. Uso imediato. Uso IV pode causar reação anafilática.",
+  "tags": [
+   "foto",
+   "alerta"
+  ],
+  "pg": 23
+ },
+ {
+  "g": "G",
+  "n": "Fitomenadiona (vitamina K)",
+  "a": "10 mg/mL – ampola 1 mL (Kavit® – Cristália)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Altamente fotossensível. IV ABSOLUTAMENTE CONTRAINDICADA (risco de anafilaxia).",
+  "tags": [
+   "foto",
+   "alerta"
+  ],
+  "pg": 23
+ },
+ {
+  "g": "G",
+  "n": "Furosemida",
+  "a": "10 mg/mL – ampola 2 mL (Furosefarma® – Farmace)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV direto",
+    "Sem diluição ou SF 0,9%",
+    "18 mL",
+    "Não exceder 4 mg/min"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9%",
+    "100 mL (2–10 mg/mL)",
+    "Não exceder 4 mg/min"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "–",
+  "obs": "Infusão: fotossensível – preferir equipo fotossensível e proteger da luz. Fabricante não recomenda bolus. IRA grave (creatinina > 5 mg/dL): não exceder 2,5 mg/min.",
+  "tags": [
+   "foto",
+   "alerta"
+  ],
+  "pg": 23
+ },
+ {
+  "g": "G",
+  "n": "Gluconato de cálcio 10%",
+  "a": "Ampola 10 mL (Genérico – Halexistar)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV direto",
+    "SF 0,9%, SG 5% ou RL",
+    "–",
+    "2 mL/min"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9%, SG 5% ou RL",
+    "50–100 mL",
+    "15–30 min"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "–",
+  "obs": "IV direto apenas em emergências: PCR, intoxicação.",
+  "pg": 24,
+  "tags": []
+ },
+ {
+  "g": "G",
+  "n": "Heparina",
+  "a": "5.000 UI – ampola 0,25 mL (Hemofol® – Cristália)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "SC",
+    "–",
+    "–",
+    "–"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Recomendada SOMENTE SC – tecido subcutâneo abdominal, com agulha o mais fina possível.",
+  "tags": [
+   "alerta",
+   "mav"
+  ],
+  "pg": 24
+ },
+ {
+  "g": "G",
+  "n": "Heparina sódica suína",
+  "a": "25.000 UI – frasco-ampola 5 mL (Hepamax-S® – Blau)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "SC",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV",
+    "SF 0,9%, SG 5% ou RL",
+    "50 UI/mL (10.000 UI/198 mL)",
+    "–"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "–",
+  "obs": "Observar aglomeração na solução durante a infusão. Usar sistema livre de PVC (equipo e soro) – risco de adsorção.",
+  "pg": 24,
+  "tags": [
+   "mav"
+  ]
+ },
+ {
+  "g": "G",
+  "n": "Hidrocortisona succinato sódico",
+  "a": "500 mg – frasco-ampola (Ariscorten® – Blau)",
+  "rec": "Água para injetáveis 4 mL",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV direto",
+    "SF 0,9% ou SG 5%",
+    "50 mL",
+    "10 min"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "500–1000 mL",
+    "30–60 min"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "24h",
+  "obs": "Restrição hídrica: pode-se diluir em 50 mL de SF/SG; por ser mais concentrada, usar em até 4 h.",
+  "pg": 24,
+  "tags": []
+ },
+ {
+  "g": "G",
+  "n": "Hidrocortisona succinato sódico",
+  "a": "100 mg – frasco-ampola (Genérico – Blau)",
+  "rec": "Água para injetáveis 2 mL",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV direto",
+    "SF 0,9% ou SG 5%",
+    "20 mL",
+    "2–10 min"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "100–1000 mL",
+    "30–60 min"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "24h",
+  "obs": "Restrição hídrica: pode-se diluir em 50 mL de SF/SG; usar em até 4 h.",
+  "pg": 25,
+  "tags": []
+ },
+ {
+  "g": "G",
+  "n": "Hidrocortisona succinato sódico",
+  "a": "100 mg – frasco-ampola (Cortisonal® – União Química)",
+  "rec": "Água para injetáveis 2 mL",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV direto",
+    "SF 0,9% ou SG 5%",
+    "20 mL",
+    "2–10 min"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "500–1000 mL",
+    "30–60 min"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "24h",
+  "obs": "Restrição hídrica: pode-se diluir em 50 mL de SF/SG; usar em até 4 h.",
+  "pg": 25,
+  "tags": []
+ },
+ {
+  "g": "G",
+  "n": "Hidróxido de ferro III",
+  "a": "20 mg/mL – ampola 5 mL (Noripurum EV® – Takeda)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV infusão",
+    "SF 0,9% (somente)",
+    "1 mg/mL: 20 mg/20 mL · 100 mg/100 mL · 500 mg/500 mL",
+    "1 amp 15 min · 2 amp 30 min · 3 amp 1,5 h · 4 amp 2,5 h · 5 amp 3,5 h"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "NÃO fazer IM (pH elevado).",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 25
+ },
+ {
+  "g": "G",
+  "n": "Insulina NPH humana",
+  "a": "100 UI/mL – frasco-ampola 10 mL (Novolin N® – Novo Nordisk)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "SC",
+    "–",
+    "–",
+    "Manter agulha sob a pele ≥ 6 s"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "SOMENTE SC. Frasco em uso pode ficar fora da geladeira (local fresco, longe de calor/luz) por até 28 dias.",
+  "tags": [
+   "alerta",
+   "mav"
+  ],
+  "pg": 26
+ },
+ {
+  "g": "G",
+  "n": "Insulina Humana Regular",
+  "a": "100 UI/mL – frasco-ampola 10 mL (Insunorm R® – Aspen Pharma)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "SC",
+    "–",
+    "–",
+    "Manter agulha sob a pele ≥ 6 s"
+   ],
+   [
+    "IV",
+    "SF 0,9%",
+    "100 UI em 100 mL",
+    "Bomba de infusão (ver protocolo de insulinoterapia)"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Guardar a 2–8 °C, nunca congelar. Em uso: até 6 semanas em TA (15–30 °C). IV por profissional habilitado; usar a solução diluída em até 24 h.",
+  "tags": [
+   "mav"
+  ],
+  "pg": 27
+ },
+ {
+  "g": "G",
+  "n": "Insulina Regular humana",
+  "a": "100 UI/mL – frasco-ampola 10 mL (Novolin R® – Novo Nordisk)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "SC",
+    "–",
+    "–",
+    "Manter agulha sob a pele ≥ 6 s"
+   ],
+   [
+    "IM",
+    "–",
+    "–",
+    "Sob orientação médica"
+   ],
+   [
+    "IV",
+    "SF 0,9% ou SG 5%",
+    "0,05 a 1,0 UI/mL",
+    "Bomba de infusão (ver protocolo de insulinoterapia)"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "–",
+  "obs": "Aberto: válido 6 semanas em TA (15–30 °C). Saturar o equipo com insulina por 30 min antes da infusão (adsorção). Monitorar glicemia durante a infusão.",
+  "tags": [
+   "mav"
+  ],
+  "pg": 28
+ },
+ {
+  "g": "G",
+  "n": "Metilprednisolona",
+  "a": "500 mg – frasco-ampola (Unimedrol® – União Química)",
+  "rec": "Diluente próprio (bacteriostático) 8 mL",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV direto",
+    "–",
+    "Até 125 mg em 20 ou 50 mL",
+    "3–25 min"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "250–500 mL (2,5 a 20 mg/mL)",
+    "30–120 min"
+   ]
+  ],
+  "ta": "48h",
+  "rf": "–",
+  "obs": "NÃO administrar doses moderadas/altas em push (risco de hipotensão e arritmia).",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 28
+ },
+ {
+  "g": "G",
+  "n": "Metilprednisolona",
+  "a": "500 mg – frasco-ampola (Genérico – Novafarma)",
+  "rec": "Diluente próprio 8 mL (volume final 9 mL)",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV direto",
+    "–",
+    "Até 125 mg em 20 ou 50 mL",
+    "3–25 min"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "50–200 mL (2,5 a 20 mg/mL)",
+    "30–120 min"
+   ]
+  ],
+  "ta": "48h",
+  "rf": "–",
+  "obs": "NÃO administrar doses moderadas/altas em push (risco de hipotensão e arritmia).",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 29
+ },
+ {
+  "g": "G",
+  "n": "Metoclopramida",
+  "a": "5 mg/mL – ampola 2 mL (Noprosil® – Isofarma)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "Lentamente"
+   ],
+   [
+    "IV direto",
+    "AD, SF 0,9% ou SG 5%",
+    "18 mL de solução (20 mL final)",
+    "Lento – mínimo 3 min"
+   ],
+   [
+    "IV infusão",
+    "AD, SF 0,9% ou SG 5%",
+    "50 mL",
+    "15–30 min"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "–",
+  "obs": "Administrar lentamente para evitar reação extrapiramidal.",
+  "pg": 29,
+  "tags": []
+ },
+ {
+  "g": "G",
+  "n": "Omeprazol sódico",
+  "a": "40 mg – frasco-ampola (Genérico – Cristália)",
+  "rec": "Diluente próprio 10 mL",
+  "vias": [
+   [
+    "IV direto ou infusão",
+    "SF 0,9% ou SG 5%",
+    "Infusão: 100 mL de SF ou SG 5%",
+    "2,5 mL/min (máx. 4 mL/min)"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Não misturar com outros medicamentos. Não expor à luz por mais de 24 h.",
+  "tags": [
+   "foto"
+  ],
+  "pg": 30
+ },
+ {
+  "g": "G",
+  "n": "Omeprazol sódico",
+  "a": "40 mg – frasco-ampola (Oprazon® – Blau)",
+  "rec": "Diluente próprio 10 mL",
+  "vias": [
+   [
+    "IV direto ou infusão",
+    "SF 0,9% ou SG 5%",
+    "Infusão: 100 mL de SF ou SG 5%",
+    "2,5 mL/min (máx. 4 mL/min)"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Não misturar com outros medicamentos.",
+  "pg": 30,
+  "tags": []
+ },
+ {
+  "g": "G",
+  "n": "Ondansetrona",
+  "a": "2 mg/mL – ampola 2 mL (Genérico – Halex Istar)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "Não menos que 30 s"
+   ],
+   [
+    "IV direto",
+    "Pode ser sem diluição",
+    "Doses < 8 mg não precisam diluir",
+    "Até 8 mg em 2–5 min sem diluição"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "8–16 mg em 50–100 mL",
+    "15 min · contínua 1 mg/h por até 24 h"
+   ]
+  ],
+  "ta": "48h",
+  "rf": "–",
+  "obs": "–",
+  "pg": 30,
+  "tags": []
+ },
+ {
+  "g": "G",
+  "n": "Ondansetrona",
+  "a": "2 mg/mL – ampola 2 mL (Nausedron® – Cristália)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "Não menos que 30 s"
+   ],
+   [
+    "IV direto",
+    "Pode ser sem diluição",
+    "Doses < 8 mg não precisam diluir",
+    "Até 8 mg em 2–5 min sem diluição"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "8–16 mg em 50–100 mL",
+    "15 min · contínua 1 mg/h por até 24 h"
+   ]
+  ],
+  "ta": "48h",
+  "rf": "–",
+  "obs": "–",
+  "pg": 31,
+  "tags": []
+ },
+ {
+  "g": "G",
+  "n": "Prometazina",
+  "a": "25 mg/mL – ampola 2 mL (Prometazol® – Sanval)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Fabricante não recomenda diluir; recomenda SOMENTE IM.",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 31
+ },
+ {
+  "g": "G",
+  "n": "Prometazina",
+  "a": "25 mg/mL – ampola 2 mL (Pamergan® – Cristália)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "IV não recomendada (riscos). NÃO usar SC nem intra-arterial.",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 31
+ },
+ {
+  "g": "G",
+  "n": "Pentoxifilina",
+  "a": "20 mg/mL – ampola 5 mL (Vascer® – União Química)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV",
+    "SF 0,9% ou SG 5%",
+    "250 ou 500 mL",
+    "2–3 h"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "–",
+  "obs": "–",
+  "pg": 32,
+  "tags": []
+ },
+ {
+  "g": "G",
+  "n": "Sulfato de magnésio 10%",
+  "a": "Ampola 10 mL (Genérico – Samtec)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV",
+    "SF 0,9% ou SG 5%",
+    "1 g em 100 mL ou ACM",
+    "IV lento ou infusão contínua"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "–",
+  "tags": [
+   "mav"
+  ],
+  "pg": 32
+ },
+ {
+  "g": "G",
+  "n": "Terbutalina sulfato",
+  "a": "0,5 mg/mL – ampola 1 mL (Genérico – Greenpharma)",
+  "rec": "–",
+  "vias": [
+   [
+    "SC",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV infusão",
+    "SG 5%",
+    "100 mL (5 mcg/mL)",
+    "20–30 gotas/min"
+   ]
+  ],
+  "ta": "12h",
+  "rf": "–",
+  "obs": "EVITAR SF (risco de edema pulmonar); se usar salina, monitorar cuidadosamente.",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 33
+ },
+ {
+  "g": "G",
+  "n": "Terbutalina sulfato",
+  "a": "0,5 mg/mL – ampola 1 mL (Genérico – Hipolabor)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "SC",
+    "–",
+    "0,5 a 1 mL",
+    "–"
+   ],
+   [
+    "IV infusão",
+    "SG 5%",
+    "5 mg (10 ampolas) para 1000 mL",
+    "20–30 gotas/min"
+   ]
+  ],
+  "ta": "12h",
+  "rf": "–",
+  "obs": "NÃO usar soro fisiológico. IV somente em SG 5%.",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 33
+ },
+ {
+  "g": "G",
+  "n": "Tiamina (vitamina B1)",
+  "a": "100 mg/mL – ampola 1 mL (Acesyl® – Citopharma)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "100 a 200 mg",
+    "–"
+   ],
+   [
+    "IV",
+    "SF 0,9%",
+    "100 mL",
+    "Até 100 mg: mín. 10 min · > 100 mg: mín. 30 min"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Administrar de preferência ANTES de soluções com glicose.",
+  "pg": 33,
+  "tags": []
+ },
+ {
+  "g": "G",
+  "n": "Vitamina C",
+  "a": "100 mg/mL – ampola 5 mL (Genérico – Farmace)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV",
+    "SF 0,9%, SG 5% ou RL",
+    "Proporção 1:1 (ex.: 1 g/1 L) – grandes volumes",
+    "Lento, 100 mg/min ou 1 mL/min (média 60 min)"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Evitar IV rápida (tontura/desmaio). Usar imediatamente após abrir a ampola.",
+  "pg": 33,
+  "tags": []
+ },
+ {
+  "g": "G",
+  "n": "Vitamina do complexo B",
+  "a": "Ampola 2 mL (Hyplex B® – Hypofarma)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV",
+    "SF 0,9% ou SG 5%",
+    "≥ 500 mL (preferencialmente 1000 mL)",
+    "Infusão lenta, > 60 min"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Usar equipo fotossensível (IV) e proteger o frasco da luz.",
+  "tags": [
+   "foto"
+  ],
+  "pg": 33
+ },
+ {
+  "g": "A",
+  "n": "Atracúrio",
+  "a": "10 mg/mL – ampolas 2,5 mL e 5 mL (Tracur® – Cristália)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV direto",
+    "SF 0,9% ou SG 5%",
+    "Bolus inicial 0,3–0,6 mg/kg",
+    "Bolus"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "0,3–0,6 mg/kg/h (procedimentos cirúrgicos)",
+    "Infusão contínua"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "24h",
+  "obs": "Bloqueio neuromuscular revertido com anticolinesterásicos (neostigmina, edrofônio) acompanhados/precedidos de atropina.",
+  "tags": [
+   "mav"
+  ],
+  "pg": 35
+ },
+ {
+  "g": "A",
+  "n": "Bupivacaína cloridrato",
+  "a": "5 mg/mL – frasco-ampola 20 mL (Genérico – Hypofarma)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "Perineural / epidural / infiltração local",
+    "–",
+    "–",
+    "25–50 mg/min"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Terapia individualizada para o tipo de bloqueio.",
+  "pg": 35,
+  "tags": []
+ },
+ {
+  "g": "A",
+  "n": "Bupivacaína + Epinefrina 0,5%",
+  "a": "5 mg/mL + 1:200.000 – frasco 20 mL (Neocaína® – Cristália)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "Peridural / caudal / infiltração local",
+    "–",
+    "–",
+    "–"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Terapia individualizada. Para infiltração e bloqueio nervoso.",
+  "pg": 35,
+  "tags": []
+ },
+ {
+  "g": "A",
+  "n": "Bupivacaína + Glicose (pesada)",
+  "a": "5 mg/mL + 80 mg/mL – ampola 4 mL (Genérico – Hipolabor)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "Intratecal (raquianestesia hiperbárica)",
+    "–",
+    "2–4 mL conforme terapia",
+    "–"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "NÃO diluir. Uso EXCLUSIVO intratecal.",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 35
+ },
+ {
+  "g": "A",
+  "n": "Clorpromazina",
+  "a": "5 mg/mL – ampola 5 mL (Genérico – Hypofarma)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Uso EXCLUSIVO IM (fabricante).",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 36
+ },
+ {
+  "g": "A",
+  "n": "Dantroleno",
+  "a": "20 mg – frasco-ampola (Dantrolen® – Cristália)",
+  "rec": "Água para injetáveis 60 mL",
+  "vias": [
+   [
+    "IV direto",
+    "Somente água para injetáveis",
+    "Sem diluição",
+    "Bolus"
+   ],
+   [
+    "IV infusão",
+    "Somente água para injetáveis",
+    "Sem diluição",
+    "60 min"
+   ]
+  ],
+  "ta": "6h",
+  "rf": "–",
+  "obs": "INCOMPATÍVEL com SF 0,9% e SG 5%.",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 36
+ },
+ {
+  "g": "A",
+  "n": "Diazepam",
+  "a": "5 mg/mL – ampola 2 mL (Genérico – Santisa)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV direto",
+    "–",
+    "–",
+    "2–5 mg/min (adultos)"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "Máx. 4 mL (2 ampolas) em 250 mL",
+    "0,5–1 mL/min"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "IV intermitente: risco de precipitação ao misturar com diluente e de adsorção ao PVC (bolsa flexível).",
+  "tags": [],
+  "pg": 36
+ },
+ {
+  "g": "A",
+  "n": "Etomidato",
+  "a": "2 mg/mL – ampola 10 mL (Genérico – Cristália)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV",
+    "–",
+    "–",
+    "30–60 segundos"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Uso imediato.",
+  "tags": [
+   "mav"
+  ],
+  "pg": 36
+ },
+ {
+  "g": "A",
+  "n": "Fenitoína sódica 5%",
+  "a": "50 mg/mL – ampola 5 mL (Fenital® – Cristália)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV direto",
+    "SF 0,9%",
+    "Diluir em 15 mL de SF 0,9%",
+    "2 min"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9%",
+    "1 ampola em 50–100 mL de SF 0,9%",
+    "30–60 min"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "IV direto é VESICANTE. Infusão com FILTRO 0,22 µm (pode cristalizar mesmo em SF). Soluções glicosadas PRECIPITAM – não usar.",
+  "tags": [
+   "flebite",
+   "alerta"
+  ],
+  "fleb": "Sim – pH alcalino",
+  "pg": 37
+ },
+ {
+  "g": "A",
+  "n": "Fenobarbital",
+  "a": "200 mg – ampola 2 mL (Fenocris® – Cristália)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "Não mais que 5 mL em grande músculo",
+    "–"
+   ],
+   [
+    "IV",
+    "SF 0,9% ou SG 5%",
+    "IV direto: 30–130 mg/mL",
+    "Até 60 mg/min"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "IV somente se VO for impraticável. Extremamente alcalino.",
+  "tags": [
+   "flebite",
+   "alerta"
+  ],
+  "fleb": "Sim – pH alcalino",
+  "pg": 37
+ },
+ {
+  "g": "A",
+  "n": "Fentanila (citrato)",
+  "a": "50 mcg/mL – ampolas 2, 5 e 10 mL (Genérico – Hipolabor)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "1 a 2 mL",
+    "–"
+   ],
+   [
+    "Espinhal",
+    "–",
+    "1,5 mcg/kg",
+    "–"
+   ],
+   [
+    "IV",
+    "SF 0,9% ou SG 5%",
+    "10 amp (5 mL) em 200 mL · 5 amp (10 mL) em 200 mL",
+    "Intermitente 3–5 min; doses > 5 mcg/kg em 5–10 min"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "–",
+  "obs": "A critério médico (ACM).",
+  "tags": [
+   "mav"
+  ],
+  "pg": 37
+ },
+ {
+  "g": "A",
+  "n": "Fentanila (citrato)",
+  "a": "50 mcg/mL – ampolas 5 e 10 mL (Fentanest® – Cristália)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "Intratecal",
+    "–",
+    "5–20 mcg (0,1–0,4 mcg/kg)",
+    "–"
+   ],
+   [
+    "Epidural",
+    "SF 0,9% ou anestésico local compatível",
+    "10 mL; 50–100 mcg (1–2 mcg/kg)",
+    "–"
+   ],
+   [
+    "IM",
+    "–",
+    "1–2 mL; 50–100 mcg",
+    "Lento, 1–2 min"
+   ],
+   [
+    "IV direto",
+    "SF 0,9% ou SG 5%",
+    "–",
+    "3–5 min; doses > 5 mcg/kg em 5–10 min"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "10 amp (5 mL) ou 5 amp (10 mL) em 200 mL",
+    "Contínua 0,7–10 mcg/kg/h"
+   ]
+  ],
+  "ta": "48h em SF 0,9% · 6h em SG 5%",
+  "rf": "–",
+  "obs": "Superdose: depressão respiratória (bradipneia a apneia). Antagonista: naloxona.",
+  "tags": [
+   "mav"
+  ],
+  "pg": 38
+ },
+ {
+  "g": "A",
+  "n": "Fentanila (citrato)",
+  "a": "78,5 mcg/mL – ampola 2 mL (Unifental® – União Química)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "Espinhal",
+    "–",
+    "1,5 mcg/kg",
+    "–"
+   ],
+   [
+    "IM",
+    "–",
+    "1–2 mL; 50–100 mcg",
+    "Lento, 1–2 min"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "10 amp (5 mL) ou 5 amp (10 mL) em 200 mL",
+    "Contínua 0,7–10 mcg/kg/h"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "–",
+  "obs": "Superdose: depressão respiratória. Antagonista: naloxona.",
+  "tags": [
+   "mav"
+  ],
+  "pg": 38
+ },
+ {
+  "g": "A",
+  "n": "Flumazenil",
+  "a": "0,1 mg/mL – ampola 5 mL (Flumazil® – Cristália)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV direto",
+    "–",
+    "Sem diluição",
+    "Mínimo 30 s"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "50–100 mL",
+    "0,1–0,4 mg/h"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "–",
+  "obs": "Administrar em acesso venoso de grande calibre.",
+  "pg": 39,
+  "tags": []
+ },
+ {
+  "g": "A",
+  "n": "Haloperidol decanoato",
+  "a": "50 mg/mL – ampola 1 mL (Decan Haloper® – União Química)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM profunda",
+    "–",
+    "–",
+    "–"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "NÃO administrar IV. IM profunda (glúteo), uma vez ao mês.",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 39
+ },
+ {
+  "g": "A",
+  "n": "Haloperidol decanoato",
+  "a": "50 mg/mL – ampola 1 mL (Halo Decanoato® – Cristália)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Somente IM (glúteo), uma vez ao mês.",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 39
+ },
+ {
+  "g": "A",
+  "n": "Haloperidol lactato",
+  "a": "5 mg/mL – ampola 1 mL (Genérico – Teuto)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "2,5 a 5 mg IM",
+    "–"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Somente IM recomendada.",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 39
+ },
+ {
+  "g": "A",
+  "n": "Haloperidol lactato",
+  "a": "5 mg/mL – ampola 1 mL (Halo® – Cristália)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "2,5 a 5 mg IM",
+    "–"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Somente IM recomendada.",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 39
+ },
+ {
+  "g": "A",
+  "n": "Lidocaína 2%",
+  "a": "Frasco-ampola 20 mL (Genérico – Hypofarma)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "Infiltração local / IV",
+    "–",
+    "–",
+    "–"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "–",
+  "pg": 40,
+  "tags": []
+ },
+ {
+  "g": "A",
+  "n": "Lidocaína 2%",
+  "a": "Frasco-ampola 20 mL (Genérico – Hipolabor)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "Infiltração / bloqueio nervoso",
+    "–",
+    "–",
+    "–"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "–",
+  "pg": 40,
+  "tags": []
+ },
+ {
+  "g": "A",
+  "n": "Lidocaína 2%",
+  "a": "Frasco-ampola 20 mL (Xylestesin® – Cristália)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "Anestesia regional",
+    "–",
+    "–",
+    "–"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Infiltração, bloqueio nervoso, anestesia caudal e peridural. NÃO indicado para raquianestesia.",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 40
+ },
+ {
+  "g": "A",
+  "n": "Lidocaína + Epinefrina",
+  "a": "20 mg/mL + 0,005 mg/mL – frasco-ampola 20 mL (Hypocaína® – Hypofarma)",
+  "rec": "Já vem em solução",
+  "vias": [
+   [
+    "Infiltração local / peridural / paracervical",
+    "–",
+    "–",
+    "–"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "NÃO diluir. Uso conforme terapia individualizada.",
+  "pg": 40,
+  "tags": []
+ },
+ {
+  "g": "A",
+  "n": "Midazolam",
+  "a": "5 mg/mL – ampola 3 mL (Genérico – Hipolabor)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV direto",
+    "SF 0,9% ou SG 5%",
+    "1–5 mg/mL (máx. 5 mg/mL)",
+    "2–5 min"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "15 mg para 100–1000 mL",
+    "Anestesia: 0,03–0,1 mg/kg/h · UTI: inicial 0,03–0,3 mg, manutenção 0,03–0,2 mg/kg/h"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "3 dias",
+  "obs": "Sedativo potente: administração lenta; dose individualizada e titulada.",
+  "tags": [
+   "mav"
+  ],
+  "pg": 41
+ },
+ {
+  "g": "A",
+  "n": "Midazolam",
+  "a": "1 mg/mL – ampola 5 mL (Genérico – Hipolabor)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV direto",
+    "SF 0,9% ou SG 5%",
+    "1–5 mg/mL (máx. 5 mg/mL)",
+    "2–5 min"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "15 mg para 100–1000 mL",
+    "Anestesia: 0,03–0,1 mg/kg/h · UTI: inicial 0,03–0,3 mg, manutenção 0,03–0,2 mg/kg/h"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "3 dias",
+  "obs": "Sedativo potente: administração lenta; dose individualizada e titulada.",
+  "tags": [
+   "mav"
+  ],
+  "pg": 41
+ },
+ {
+  "g": "A",
+  "n": "Morfina",
+  "a": "1 mg/mL – ampola 2 mL (Dimorf® – Cristália)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "Peridural",
+    "–",
+    "Inicial 5 mg; contínua: inicial 2–4 mg",
+    "Contínua: dose inicial em 24 h"
+   ],
+   [
+    "Intratecal",
+    "–",
+    "~1/10 da dose peridural; 0,2–1 mg",
+    "–"
+   ],
+   [
+    "IM",
+    "–",
+    "Inicial 5–20 mg/70 kg",
+    "–"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "Inicial 5–20 mg/70 kg; concentração 1 mg/mL",
+    "Contínua 1 mg/h (máx. 10 mg/h); VM: 5–35 mg/h"
+   ]
+  ],
+  "ta": "25h (conforme guia)",
+  "rf": "8 dias",
+  "obs": "Intratecal: não injetar mais que 1 mL da ampola, sempre em região lombar. Naloxona 0,4 mg/h por 24 h pode reduzir efeitos colaterais.",
+  "tags": [
+   "mav"
+  ],
+  "pg": 42
+ },
+ {
+  "g": "A",
+  "n": "Morfina",
+  "a": "10 mg/mL – ampola 1 mL (Genérico – Hipolabor)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "Peridural",
+    "–",
+    "Inicial 5 mg; contínua: inicial 2–4 mg",
+    "Contínua: dose inicial em 24 h"
+   ],
+   [
+    "Intratecal",
+    "–",
+    "~1/10 da dose peridural; 0,2–1 mg",
+    "–"
+   ],
+   [
+    "IM",
+    "–",
+    "Inicial 5–20 mg/70 kg",
+    "–"
+   ],
+   [
+    "IV",
+    "SF 0,9% ou SG 5%",
+    "Inicial 5–20 mg/70 kg; concentração 1 mg/mL",
+    "Contínua 1 mg/h (máx. 10 mg/h); VM: 5–35 mg/h"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "7 dias",
+  "obs": "ATENÇÃO à concentração (10 mg/mL). Intratecal: não injetar mais que 1 mL, sempre em região lombar. Naloxona 0,4 mg/h por 24 h pode reduzir efeitos colaterais.",
+  "tags": [
+   "mav"
+  ],
+  "pg": 43
+ },
+ {
+  "g": "A",
+  "n": "Morfina",
+  "a": "10 mg/mL – ampola 1 mL (Dimorf® – Cristália)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "Peridural",
+    "–",
+    "Inicial 5 mg; contínua: inicial 2–4 mg",
+    "Contínua: dose inicial em 24 h"
+   ],
+   [
+    "Intratecal",
+    "–",
+    "~1/10 da dose peridural; 0,2–1 mg",
+    "–"
+   ],
+   [
+    "IM",
+    "–",
+    "Inicial 5–20 mg/70 kg",
+    "–"
+   ],
+   [
+    "IV",
+    "SF 0,9% ou SG 5%",
+    "Inicial 5–20 mg/70 kg; concentração 1 mg/mL",
+    "Contínua 1 mg/h (máx. 10 mg/h); VM: 5–35 mg/h"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "7 dias",
+  "obs": "ATENÇÃO à concentração (10 mg/mL). Intratecal: não injetar mais que 1 mL, sempre em região lombar. Naloxona 0,4 mg/h por 24 h pode reduzir efeitos colaterais.",
+  "tags": [
+   "mav"
+  ],
+  "pg": 44
+ },
+ {
+  "g": "A",
+  "n": "Nalbufina",
+  "a": "10 mg/mL – ampola 1 mL (Nubain® – Cristália)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "SC",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV",
+    "SF 0,9% ou RL",
+    "–",
+    "IV direto 10–15 min"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "–",
+  "pg": 44,
+  "tags": []
+ },
+ {
+  "g": "A",
+  "n": "Naloxona",
+  "a": "0,4 mg/mL – ampola 1 mL (Narcan® – Cristália)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "SC",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV direto",
+    "SF 0,9% ou SG 5%",
+    "–",
+    "Bolus"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "1 ampola em 100 mL · 2 mg em 500 mL = 0,004 mg/mL",
+    "Infusão contínua"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "–",
+  "obs": "Antagonista opioide.",
+  "pg": 45,
+  "tags": []
+ },
+ {
+  "g": "A",
+  "n": "Pancurônio",
+  "a": "2 mg/mL – ampola 2 mL (Pancuron® – Cristália)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV",
+    "SF 0,9%, SG 5% ou RL",
+    "–",
+    "Bolus direto no equipo de infusão"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Não há dados suficientes para recomendar infusão contínua.",
+  "tags": [
+   "mav"
+  ],
+  "pg": 45
+ },
+ {
+  "g": "A",
+  "n": "Propofol",
+  "a": "10 mg/mL – frasco-ampola 20 mL (Provive® – Claris)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV direto",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV infusão",
+    "SG 5%",
+    "1 parte de propofol : até 4 partes de SG 5% (não exceder 1:5 = 2 mg/mL)",
+    "–"
+   ]
+  ],
+  "ta": "6h (IV direto)",
+  "rf": "–",
+  "obs": "Pode ser infundido sem diluição em seringa plástica. Sem diluição: usar em até 12 h.",
+  "tags": [
+   "mav"
+  ],
+  "pg": 46
+ },
+ {
+  "g": "A",
+  "n": "Tiopental sódico",
+  "a": "1 g – frasco-ampola (Thiopentax® – Cristália)",
+  "rec": "Água p/ injeção ou SF 0,9%: 40 mL",
+  "vias": [
+   [
+    "IV direto",
+    "–",
+    "1 a 25 mg/mL",
+    "Indução lenta: 2–3 mL de solução 2,5% a cada 20–40 s; doses adicionais 25–50 mg"
+   ],
+   [
+    "IV infusão",
+    "Água p/ injeção ou SF 0,9%",
+    "1 a 25 mg/mL",
+    "Manutenção: solução 0,2 ou 0,4% (procedimentos ≤ 15 min)"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Doses estimadas para indivíduos saudáveis – titular. Diluente sem traços de CO₂ (evita precipitação).",
+  "tags": [
+   "mav"
+  ],
+  "pg": 47
+ },
+ {
+  "g": "A",
+  "n": "Suxametônio",
+  "a": "100 mg – frasco-ampola (Succinil Colin® – União Química)",
+  "rec": "IV direto: água p/ injetáveis 2 mL · Infusão: 10 mL",
+  "vias": [
+   [
+    "IM",
+    "SF 0,9% ou SG 5%",
+    "–",
+    "–"
+   ],
+   [
+    "IV direto",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV infusão",
+    "–",
+    "100 mL",
+    "–"
+   ]
+  ],
+  "ta": "–",
+  "rf": "24h",
+  "obs": "Uso EXCLUSIVO em anestesiologia.",
+  "tags": [
+   "mav",
+   "alerta"
+  ],
+  "pg": 48
+ },
+ {
+  "g": "A",
+  "n": "Tramadol",
+  "a": "50 mg/mL – ampolas 1 e 2 mL (Genérico – Hipolabor)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV direto",
+    "–",
+    "–",
+    "Lento (1 mL/min)"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9%",
+    "100 mL",
+    "30–60 min"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Pode causar náuseas – avaliar antiemético concomitante.",
+  "pg": 49,
+  "tags": [
+   "mav"
+  ]
+ },
+ {
+  "g": "A",
+  "n": "Tramadol cloridrato",
+  "a": "50 mg/mL – ampolas 1 e 2 mL (Genérico – União Química)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV direto",
+    "–",
+    "–",
+    "Lento (1 mL/min)"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9%",
+    "100 mL",
+    "30–60 min"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Pode causar náuseas – avaliar antiemético concomitante.",
+  "pg": 49,
+  "tags": [
+   "mav"
+  ]
+ },
+ {
+  "g": "M",
+  "n": "Aciclovir",
+  "a": "250 mg – frasco-ampola (Genérico – Teuto)",
+  "rec": "AD ou SF 0,9%: 10 mL",
+  "vias": [
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "100 mL (concentração ≤ 5 mg/mL)",
+    "1 h"
+   ]
+  ],
+  "ta": "12h",
+  "rf": "–",
+  "obs": "NÃO refrigerar. Infundir em 1 h para evitar lesão renal.",
+  "tags": [
+   "flebite",
+   "alerta"
+  ],
+  "fleb": "Sim – alta osmolaridade",
+  "pg": 51
+ },
+ {
+  "g": "M",
+  "n": "Aciclovir",
+  "a": "250 mg – frasco-ampola (Univir® – União Química)",
+  "rec": "AD ou SF 0,9%: 10 mL",
+  "vias": [
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "100 mL (concentração ≤ 5 mg/mL)",
+    "1 h"
+   ]
+  ],
+  "ta": "12h",
+  "rf": "–",
+  "obs": "NÃO refrigerar. Descartar solução não utilizada. Ajustar dose em insuficiência renal.",
+  "tags": [
+   "flebite",
+   "alerta"
+  ],
+  "fleb": "Sim – alta osmolaridade",
+  "pg": 51
+ },
+ {
+  "g": "M",
+  "n": "Amicacina",
+  "a": "250 mg/mL – ampola 2 mL (Genérico – Teuto)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "100–200 mL (máx. 5 mg/mL)",
+    "Adultos/crianças: 60 min · lactentes: 1–2 h"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "–",
+  "obs": "Risco de oto e nefrotoxicidade – avaliar com frequência. Ajustar à função renal.",
+  "pg": 51,
+  "tags": []
+ },
+ {
+  "g": "M",
+  "n": "Amoxicilina + Clavulanato",
+  "a": "1000 mg + 200 mg – frasco-ampola (Doclaxin® – Blau)",
+  "rec": "AD 20 mL",
+  "vias": [
+   [
+    "IV infusão",
+    "SG 5% ou SF 0,9%",
+    "50–100 mL (pode ser IV direto após reconstituição)",
+    "30–40 min"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "IM não recomendada. Ajustar dose em insuficiência renal e hepática.",
+  "pg": 51,
+  "tags": []
+ },
+ {
+  "g": "M",
+  "n": "Ampicilina",
+  "a": "1 g – frasco-ampola (Genérico – Teuto)",
+  "rec": "Diluente próprio 3 mL ou AD",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "50–100 mL (máx. 30 mg/mL)",
+    "15–30 min"
+   ]
+  ],
+  "ta": "SG 5%: uso imediato",
+  "rf": "–",
+  "obs": "IM profunda (quadrante superior do glúteo). Administração rápida pode causar convulsões.",
+  "pg": 52,
+  "tags": []
+ },
+ {
+  "g": "M",
+  "n": "Ampicilina",
+  "a": "1 g – frasco-ampola (Cilinon® – Blau)",
+  "rec": "Diluente próprio 3 mL ou AD",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "50–100 mL (máx. 30 mg/mL)",
+    "10–15 min"
+   ]
+  ],
+  "ta": "Uso imediato",
+  "rf": "–",
+  "obs": "IM profunda (glúteo). Rápida pode causar convulsões. NÃO misturar com aminoglicosídeos na mesma seringa (inativação).",
+  "pg": 52,
+  "tags": []
+ },
+ {
+  "g": "M",
+  "n": "Ampicilina + Sulbactam",
+  "a": "1 g + 500 mg – frasco-ampola (Genérico – Novafarma)",
+  "rec": "IM: lidocaína 0,5% 3,2 mL · IV: AD, SF 0,9% ou RL 3,2 mL",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV direto",
+    "–",
+    "Máx. 250–125 mg/mL",
+    "3 min"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9%",
+    "100 mL",
+    "15–30 min"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Descartar solução não utilizada após o tempo indicado.",
+  "pg": 53,
+  "tags": []
+ },
+ {
+  "g": "M",
+  "n": "Azitromicina",
+  "a": "500 mg – frasco-ampola (Genérico – ABL)",
+  "rec": "Água p/ injetáveis 4,8 mL",
+  "vias": [
+   [
+    "IV infusão",
+    "SF 0,9%, SG 5% ou RL",
+    "250 mL (2 mg/mL) ou 500 mL (1 mg/mL) – máx. 2 mg/mL",
+    "500 mL em 3 h · 250 mL em 1 h"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "7 dias",
+  "obs": "SOMENTE infusão IV. NÃO fazer IV direto nem IM.",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 54
+ },
+ {
+  "g": "M",
+  "n": "Azitromicina",
+  "a": "500 mg – frasco-ampola (Azicin® – Cristália)",
+  "rec": "Água p/ injetáveis 4,8 mL",
+  "vias": [
+   [
+    "IV infusão",
+    "SF 0,9%, SG 5% ou RL",
+    "250 mL (2 mg/mL) ou 500 mL (1 mg/mL) – máx. 2 mg/mL",
+    "500 mL em 3 h · 250 mL em 1 h"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "7 dias",
+  "obs": "Somente IV (infusão).",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 54
+ },
+ {
+  "g": "M",
+  "n": "Aztreonam",
+  "a": "1 g – frasco-ampola (Genérico – BioChimico)",
+  "rec": "IM: AD ou SF 3 mL · IV direto: 6–10 mL AD · Infusão: AD 3 mL",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV direto",
+    "–",
+    "–",
+    "3–5 min"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "100 mL",
+    "20–60 min"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "–",
+  "obs": "–",
+  "pg": 54,
+  "tags": []
+ },
+ {
+  "g": "M",
+  "n": "Benzilpenicilina benzatina",
+  "a": "1.200.000 UI – frasco-ampola (Bepeben® – Teuto)",
+  "rec": "Água p/ injetáveis 4 mL",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Agitar vigorosamente até dissolução completa. Uso EXCLUSIVO IM.",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 55
+ },
+ {
+  "g": "M",
+  "n": "Benzilpenicilina potássica",
+  "a": "5.000.000 UI – frasco-ampola (Aricilina® – Blau)",
+  "rec": "Água p/ injetáveis 10 mL (volume final 12 mL)",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "Lentamente"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "50–100 mL (adulto 146.000 UI/mL; pediatria 60.000 UI/mL)",
+    "30–60 min"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "24h",
+  "obs": "Cada 1.000.000 UI contém 1 mEq de K⁺. Infusão ≥ 10 mEq K⁺/h exige controle sérico e/ou ECG.",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 55
+ },
+ {
+  "g": "M",
+  "n": "Cefalotina",
+  "a": "1 g – frasco-ampola (Genérico – ABL)",
+  "rec": "IM: AD 5 mL · IV: AD 10 mL",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV direto",
+    "–",
+    "–",
+    "3–5 min"
+   ],
+   [
+    "IV intermitente",
+    "SF 0,9% ou SG 5%",
+    "50–100 mL",
+    "30 min"
+   ]
+  ],
+  "ta": "2h",
+  "rf": "48h",
+  "obs": "IM em grande massa muscular. Solução pode escurecer (incolor → amarelo claro).",
+  "tags": [
+   "flebite"
+  ],
+  "fleb": "Sim – pH baixo",
+  "pg": 55
+ },
+ {
+  "g": "M",
+  "n": "Cefalotina",
+  "a": "1 g – frasco-ampola (Cefalotil® – União Química)",
+  "rec": "IM: AD 5 mL · IV: AD 10 mL",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV direto",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV intermitente",
+    "SF 0,9% ou SG 5%",
+    "100 mL (~9 mg/mL)",
+    "30 min"
+   ]
+  ],
+  "ta": "12h",
+  "rf": "7 dias",
+  "obs": "Alteração de cor (amarelo claro) não altera potência. Incompatível em mistura com aminoglicosídeos (inativação).",
+  "tags": [
+   "flebite"
+  ],
+  "fleb": "Sim – pH baixo",
+  "pg": 56
+ },
+ {
+  "g": "M",
+  "n": "Cefazolina sódica",
+  "a": "1 g – frasco-ampola (Fazolon® – Blau)",
+  "rec": "IM: AD ou lidocaína 0,5% 2,5 mL (final 3,2 mL) · IV: AD 10 mL (final 10,6 mL)",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV direto",
+    "–",
+    "–",
+    "3–5 min"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "50–100 mL",
+    "10–60 min"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Reconstituído com LIDOCAÍNA NÃO pode ser IV. Pode amarelar sem perda de eficácia.",
+  "tags": [
+   "flebite",
+   "alerta"
+  ],
+  "fleb": "Sim – pH baixo",
+  "pg": 57
+ },
+ {
+  "g": "M",
+  "n": "Cefepima",
+  "a": "1 g – frasco-ampola (Genérico – BioChimico)",
+  "rec": "IM: 3 mL AD · IV direto: 10 mL AD · Infusão: AD, SF ou SG 5% 10 mL",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV direto",
+    "–",
+    "–",
+    "3–5 min"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9%, SG 5% ou RL",
+    "100 mL",
+    "30 min ou infusão prolongada de 3 h"
+   ]
+  ],
+  "ta": "12h",
+  "rf": "3 dias",
+  "obs": "IV direto preferencial em infecções graves/risco de choque. Pode escurecer sem perda de potência.",
+  "pg": 57,
+  "tags": []
+ },
+ {
+  "g": "M",
+  "n": "Ceftazidima",
+  "a": "1 g – frasco-ampola (Cefazima® – BioChimico)",
+  "rec": "IM: AD, SF ou SG 5% 3 mL · IV: 10 mL",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV direto",
+    "–",
+    "–",
+    "3–5 min"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9%, SG 5% ou RL",
+    "50–100 mL",
+    "15–30 min"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Precipita com aminoglicosídeos – administrar separadamente.",
+  "pg": 58,
+  "tags": []
+ },
+ {
+  "g": "M",
+  "n": "Ceftriaxona sódica",
+  "a": "1 g – frasco-ampola (Genérico – Aurobindo)",
+  "rec": "Água p/ injetáveis 10 mL",
+  "vias": [
+   [
+    "IV direto",
+    "Água p/ injetáveis",
+    "10 mL",
+    "–"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "50–100 mL",
+    "30–60 min"
+   ]
+  ],
+  "ta": "6h",
+  "rf": "24h",
+  "obs": "INCOMPATÍVEL com RINGER LACTATO e qualquer solução com CÁLCIO (inclusive no mesmo acesso: suspender RL e lavar com SF/SG).",
+  "tags": [
+   "flebite",
+   "alerta"
+  ],
+  "fleb": "Sim – pH baixo",
+  "pg": 58
+ },
+ {
+  "g": "M",
+  "n": "Ceftriaxona sódica",
+  "a": "1 g – frasco-ampola (Triaxton® – Blau)",
+  "rec": "Água p/ injetáveis 10 mL",
+  "vias": [
+   [
+    "IV direto",
+    "Água p/ injetáveis",
+    "10 mL",
+    "2–5 min"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "50–100 mL",
+    "30–60 min"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "INCOMPATÍVEL com RINGER LACTATO e qualquer solução com CÁLCIO (inclusive no mesmo acesso: suspender RL e lavar com SF/SG).",
+  "tags": [
+   "flebite",
+   "alerta"
+  ],
+  "fleb": "Sim – pH baixo",
+  "pg": 59
+ },
+ {
+  "g": "M",
+  "n": "Ciprofloxacino",
+  "a": "400 mg (2 mg/mL) – bolsa sistema fechado 200 mL (Genérico – Isofarma)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV",
+    "–",
+    "Pronto para uso",
+    "60 min"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Fotossensível – uso imediato. Concentração-dependente: infusão muito prolongada reduz eficácia.",
+  "tags": [
+   "foto"
+  ],
+  "pg": 59
+ },
+ {
+  "g": "M",
+  "n": "Ciprofloxacino",
+  "a": "200 mg (2 mg/mL) – bolsa sistema fechado 100 mL (Hypoflox® – Hypofarma)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV",
+    "–",
+    "Pronto para uso",
+    "60 min"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Infusão lenta, em veia de grande calibre (reduz irritação venosa).",
+  "pg": 60,
+  "tags": []
+ },
+ {
+  "g": "M",
+  "n": "Clindamicina",
+  "a": "150 mg/mL – ampola 4 mL (Hyclin® – Hypofarma)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV",
+    "SF 0,9%, SG 5% ou RL",
+    "50–100 mL (máx. 18 mg/mL)",
+    "300–600 mg em 20 min · 900–1200 mg em 40 min"
+   ]
+  ],
+  "ta": "48h",
+  "rf": "–",
+  "obs": "Não administrar mais de 1.200 mg em infusão única de 1 hora.",
+  "tags": [
+   "flebite"
+  ],
+  "fleb": "Sim – pH baixo",
+  "pg": 60
+ },
+ {
+  "g": "M",
+  "n": "Cloranfenicol succinato sódico",
+  "a": "1 g – frasco-ampola (Genérico – Novafarma)",
+  "rec": "Água p/ injetáveis 5 mL (volume final 5,8 mL)",
+  "vias": [
+   [
+    "IV",
+    "Água p/ injetáveis",
+    "10 mL",
+    "Mínimo 1 min"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9%, SG 5% ou RL",
+    "50–250 mL",
+    "Mínimo 30 min"
+   ]
+  ],
+  "ta": "Uso imediato",
+  "rf": "–",
+  "obs": "–",
+  "pg": 61,
+  "tags": []
+ },
+ {
+  "g": "M",
+  "n": "Fluconazol",
+  "a": "2 mg/mL – bolsa sistema fechado 100 mL (Genérico – Sanobiol)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV",
+    "–",
+    "Pronto para uso",
+    "Não exceder 10 mL/min (preferir 200 mg em 1 h)"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Risco de prolongamento do QT.",
+  "tags": [
+   "flebite",
+   "alerta"
+  ],
+  "fleb": "Sim",
+  "pg": 61
+ },
+ {
+  "g": "M",
+  "n": "Gentamicina",
+  "a": "40 mg/mL – ampola 2 mL (Hytamicina® – Hypofarma)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV",
+    "SF 0,9%, SG 5% ou RL",
+    "Intermitente: 100 mL (50–200 mL)",
+    "30–120 min"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Intervalo de 1–2 h com penicilinas e 1 h com cefalosporinas (inativação). Dose única pode ser IV direta lenta em 2–3 min.",
+  "pg": 62,
+  "tags": []
+ },
+ {
+  "g": "M",
+  "n": "Imipeném + Cilastatina",
+  "a": "500 mg + 500 mg – frasco-ampola (Tiepem® – BioChimico)",
+  "rec": "SF 0,9% 20 mL",
+  "vias": [
+   [
+    "IV",
+    "SF 0,9% ou SG 5%",
+    "100 mL",
+    "20–30 min ou prolongada 3 h (tempo-dependente)"
+   ]
+  ],
+  "ta": "4h",
+  "rf": "24h",
+  "obs": "INCOMPATÍVEL com RL e com água p/ injetáveis. Risco de convulsões. NÃO fazer em push.",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 62
+ },
+ {
+  "g": "M",
+  "n": "Levofloxacino",
+  "a": "5 mg/mL – bolsa 100 mL (Levotac® – Cristália)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV",
+    "–",
+    "Pronto para uso (500 mg/100 mL em SG 5%)",
+    "250–500 mg em 60 min · 750 mg em 90 min"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Usar imediatamente (até 3 h).",
+  "pg": 63,
+  "tags": []
+ },
+ {
+  "g": "M",
+  "n": "Linezolida",
+  "a": "2 mg/mL – bolsa 300 mL (Genérico – Beker)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV",
+    "–",
+    "Pronto para uso",
+    "30–120 min"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Proteger da luz até o uso. Não adicionar aditivos. Contém açúcar – cautela em diabéticos.",
+  "tags": [
+   "foto"
+  ],
+  "pg": 63
+ },
+ {
+  "g": "M",
+  "n": "Meropenem trihidratado",
+  "a": "500 mg – frasco-ampola (Genérico – BioChimico)",
+  "rec": "Água p/ injetáveis 10 mL",
+  "vias": [
+   [
+    "IV",
+    "SF 0,9%, SG 5% ou RL",
+    "100 mL",
+    "Infusão prolongada 3 h (tempo-dependente)"
+   ]
+  ],
+  "ta": "SF 10h · SG 5% 3h · RL 8h",
+  "rf": "SF 48h · SG 5% 18h · RL 48h",
+  "obs": "–",
+  "pg": 64,
+  "tags": []
+ },
+ {
+  "g": "M",
+  "n": "Meropenem trihidratado",
+  "a": "1 g – frasco-ampola (Genérico – BioChimico)",
+  "rec": "Água p/ injetáveis 20 mL",
+  "vias": [
+   [
+    "IV",
+    "SF 0,9%, SG 5% ou RL",
+    "100 mL",
+    "Infusão prolongada 3 h (tempo-dependente)"
+   ]
+  ],
+  "ta": "SF 10h · SG 5% 3h · RL 8h",
+  "rf": "SF 48h · SG 5% 18h · RL 48h",
+  "obs": "–",
+  "pg": 64,
+  "tags": []
+ },
+ {
+  "g": "M",
+  "n": "Metronidazol",
+  "a": "5 mg/mL – bolsa 100 mL (Nidazofarma® – Farmace)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV",
+    "–",
+    "Pronto para uso",
+    "–"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Fotossensível: manter invólucro de proteção durante a administração. Usar imediatamente após aberta.",
+  "tags": [
+   "foto"
+  ],
+  "pg": 65
+ },
+ {
+  "g": "M",
+  "n": "Oxacilina",
+  "a": "500 mg – frasco-ampola (Genérico – Blau)",
+  "rec": "IM: AD 2,7 mL · IV: AD ou SF 0,9% 5 mL",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV direto",
+    "–",
+    "–",
+    "Lentamente, 10 min"
+   ],
+   [
+    "IV infusão",
+    "SG 5%, SF 0,9% ou RL",
+    "0,5 a 2 mg/mL",
+    "30–60 min"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Administração muito rápida pode causar convulsões.",
+  "tags": [
+   "flebite"
+  ],
+  "fleb": "Sim – pH baixo",
+  "pg": 65
+ },
+ {
+  "g": "M",
+  "n": "Oxacilina",
+  "a": "500 mg – frasco-ampola (Oxacilil® – Novafarma)",
+  "rec": "IM: AD 2,7 mL · IV: AD ou SF 0,9% 5 mL",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV direto",
+    "–",
+    "–",
+    "Lentamente, 10 min"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9%, SG 5% ou RL",
+    "0,5 a 2 mg/mL",
+    "30–60 min"
+   ]
+  ],
+  "ta": "6h",
+  "rf": "–",
+  "obs": "Se espumar, deixar o frasco em repouso ~15 min.",
+  "tags": [
+   "flebite"
+  ],
+  "fleb": "Sim – pH baixo",
+  "pg": 65
+ },
+ {
+  "g": "M",
+  "n": "Piperacilina + Tazobactam",
+  "a": "4 g + 500 mg – frasco-ampola (Genérico – Aurobindo)",
+  "rec": "AD, SF 0,9% ou SG 5%: 20 mL",
+  "vias": [
+   [
+    "IV",
+    "SF 0,9% ou SG 5%",
+    "100 mL",
+    "30 min ou prolongada 4 h (tempo-dependente)"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "RINGER LACTATO INCOMPATÍVEL. Pode elevar AST/ALT. Exclusivo IV.",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 66
+ },
+ {
+  "g": "M",
+  "n": "Polimixina B",
+  "a": "500.000 UI – frasco-ampola (Genérico – Eurofarma)",
+  "rec": "Intratecal: SF 10 mL · IM: AD ou SF 2 mL · IV: AD 10 mL",
+  "vias": [
+   [
+    "Intratecal",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV",
+    "SF 0,9% ou SG 5% (preferir SG 5%)",
+    "300–500 mL",
+    "1–2 h"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "–",
+  "obs": "IM não é rotina (dor intensa). Preferir SG 5% (mais estável).",
+  "pg": 66,
+  "tags": []
+ },
+ {
+  "g": "M",
+  "n": "Polimixina B",
+  "a": "500.000 UI – frasco-ampola (Polixil B® – Química Haller)",
+  "rec": "Intratecal: SF 10 mL · IM: AD ou SF 2 mL · IV: AD 10 mL",
+  "vias": [
+   [
+    "Intratecal",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV",
+    "SF 0,9% ou SG 5% (preferir SG 5%)",
+    "300–500 mL",
+    "1–2 h"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "–",
+  "obs": "IM não é rotina (dor intensa). Preferir SG 5% (mais estável).",
+  "pg": 67,
+  "tags": []
+ },
+ {
+  "g": "M",
+  "n": "Sulfametoxazol + Trimetoprima",
+  "a": "400 mg + 80 mg – ampola 5 mL (Bac-Sulfitrin® – Neo Química)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV",
+    "SF 0,9% ou SG 5%",
+    "1 amp/125 mL · 2 amp/250 mL · 3 amp/500 mL",
+    "60–90 min"
+   ]
+  ],
+  "ta": "6h",
+  "rf": "–",
+  "obs": "INCOMPATÍVEL com RL. Restrição hídrica: 1 ampola em 75 mL.",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 67
+ },
+ {
+  "g": "M",
+  "n": "Teicoplanina",
+  "a": "400 mg – frasco-ampola (Teiplan® – União Química)",
+  "rec": "Diluente próprio 3 mL",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV direto",
+    "SF 0,9%, SG 5% ou RL",
+    "10 mL",
+    "–"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9%, SG 5% ou RL",
+    "50–100 mL",
+    "60 min"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "–",
+  "obs": "Se espumar na reconstituição, repousar 15 min antes de usar.",
+  "pg": 67,
+  "tags": []
+ },
+ {
+  "g": "M",
+  "n": "Tigeciclina",
+  "a": "50 mg – frasco-ampola (Tygacil® – Wyeth)",
+  "rec": "SF 0,9% ou SG 5%: 5,3 mL (10 mg/mL); retirar 5 mL = 50 mg",
+  "vias": [
+   [
+    "IV infusão",
+    "SF 0,9%, SG 5% ou RL",
+    "5 mL reconstituídos em bolsa de 100 mL",
+    "30–60 min"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Agitar DELICADAMENTE (movimentos circulares). Sempre por infusão. Dose inicial 100 mg, depois 50 mg 12/12 h – ambas em 100 mL.",
+  "pg": 68,
+  "tags": []
+ },
+ {
+  "g": "M",
+  "n": "Vancomicina",
+  "a": "500 mg – frasco-ampola (Genérico – ABL)",
+  "rec": "Água p/ injetáveis 10 mL",
+  "vias": [
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5% (ou RL)",
+    "100 mL (máx. 10 mg/mL)",
+    "Mínimo 60 min · máx. 10 mg/min"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "SF/SG 14 dias · RL 96h",
+  "obs": "< 60 min: síndrome do homem vermelho. Exclusivo IV infusão – NÃO fazer IM (necrose) nem IV direto.",
+  "tags": [
+   "flebite",
+   "alerta"
+  ],
+  "fleb": "Sim – pH baixo",
+  "pg": 68
+ },
+ {
+  "g": "C",
+  "n": "Ácido tranexâmico",
+  "a": "50 mg/mL – ampola 5 mL (Genérico – Hipolabor)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV infusão",
+    "SF 0,9%, SG 5% ou RL",
+    "Conforme restrição hídrica, a critério médico",
+    "Máximo 5 mg/min"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Uso EXCLUSIVO IV.",
+  "pg": 70,
+  "tags": []
+ },
+ {
+  "g": "C",
+  "n": "Adenosina",
+  "a": "3 mg/mL – ampola 2 mL (Genérico – Hipolabor)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV direto",
+    "–",
+    "Inicial 6 mg; se necessário, 12 mg",
+    "Bolus em 1–2 segundos"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "NÃO diluir. Não recomendada dose > 12 mg. NÃO refrigerar.",
+  "tags": [
+   "alerta",
+   "mav"
+  ],
+  "pg": 70
+ },
+ {
+  "g": "C",
+  "n": "Alteplase",
+  "a": "50 mg – frasco-ampola (Actilyse® – Boehringer Ingelheim)",
+  "rec": "Diluente próprio 50 mL",
+  "vias": [
+   [
+    "IV infusão",
+    "SF 0,9%",
+    "250 mL (concentração mínima 0,2 mg/mL)",
+    "45–90 min"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "NÃO administrar com outras drogas – nem no mesmo frasco, nem no mesmo acesso (nem com heparina).",
+  "tags": [
+   "mav",
+   "alerta"
+  ],
+  "pg": 70
+ },
+ {
+  "g": "C",
+  "n": "Amiodarona",
+  "a": "50 mg/mL – ampola 3 mL (Genérico – Hipolabor)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV infusão",
+    "SG 5% (exclusivo)",
+    "250 mL",
+    "Ataque 15 mg/min por 10 min · manutenção 1 mg/min por 6 h · após 0,5 mg/min"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "–",
+  "obs": "Diluir EXCLUSIVAMENTE em SG 5%.",
+  "tags": [
+   "mav",
+   "alerta"
+  ],
+  "pg": 70
+ },
+ {
+  "g": "C",
+  "n": "Deslanosídeo",
+  "a": "0,2 mg/mL – ampola 2 mL (Deslanol® – União Química)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "Não se recomenda diluir",
+    "–",
+    "–"
+   ],
+   [
+    "IV direto",
+    "Não se recomenda diluir",
+    "–",
+    "Bolus"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Monitorar frequência cardíaca. Infusão lenta.",
+  "tags": [],
+  "pg": 71
+ },
+ {
+  "g": "C",
+  "n": "Dobutamina cloridrato",
+  "a": "12,5 mg/mL – ampola 20 mL (Genérico – Teuto)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV",
+    "SF 0,9%, SG 5% ou RL",
+    "1000 mL = 250 mcg/mL · 500 mL = 500 mcg/mL · 250 mL = 1000 mcg/mL",
+    "Infusão contínua 2,5–20 mcg/kg/min"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "–",
+  "obs": "Concentração máx. 5000 mcg/mL (250 mg em 50 mL). Raramente até 40 mcg/kg/min.",
+  "tags": [
+   "mav"
+  ],
+  "pg": 71
+ },
+ {
+  "g": "C",
+  "n": "Dopamina",
+  "a": "5 mg/mL – ampola 10 mL (Genérico – Hipolabor)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV",
+    "SF 0,9% ou SG 5%",
+    "1 ampola em 250 mL",
+    "Em BIC"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Veia de grande calibre (risco de necrose por extravasamento). FOTOSSENSÍVEL: capa escura no frasco. Não usar se mais escuro que levemente amarelado.",
+  "tags": [
+   "mav",
+   "foto",
+   "flebite"
+  ],
+  "fleb": "Sim",
+  "pg": 71
+ },
+ {
+  "g": "C",
+  "n": "Dopamina",
+  "a": "5 mg/mL – ampola 10 mL (Dopacris® – Cristália)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV",
+    "SF 0,9% ou SG 5%",
+    "1 ampola em 250 mL",
+    "Em BIC"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Veia de grande calibre (risco de necrose por extravasamento). FOTOSSENSÍVEL: capa escura no frasco. Não usar se mais escuro que levemente amarelado.",
+  "tags": [
+   "mav",
+   "foto",
+   "flebite"
+  ],
+  "fleb": "Sim",
+  "pg": 72
+ },
+ {
+  "g": "C",
+  "n": "Epinefrina (adrenalina)",
+  "a": "1 mg/mL – ampola 1 mL (Adren® – Hipolabor)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "SC",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "Intracardíaca",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IM",
+    "–",
+    "–",
+    "Lentamente"
+   ],
+   [
+    "IV direto",
+    "SF 0,9% ou SG 5%",
+    "10 mL",
+    "Lentamente"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "1 mg em 250 mL",
+    "–"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "–",
+  "obs": "PCR adulto: sem diluição, seguida de flush salino em seringa separada. IV bem lenta (vasoespasmo). Equipo FOTOSSENSÍVEL. Extravasamento → necrose. Evitar IM em nádegas (gangrena gasosa). Intracardíaca restrita à sala cirúrgica.",
+  "tags": [
+   "mav",
+   "foto",
+   "flebite"
+  ],
+  "fleb": "Sim",
+  "pg": "72–73"
+ },
+ {
+  "g": "C",
+  "n": "Etilefrina",
+  "a": "10 mg/mL – ampola 1 mL (Etilefril® – União Química)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IM",
+    "–",
+    "1 mL",
+    "–"
+   ],
+   [
+    "IV direto",
+    "–",
+    "Metade da ampola (5 mg = 0,5 mL)",
+    "Lentamente"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9%, SG 5% ou RL",
+    "–",
+    "0,4 mg/min (0,2–0,6 mg/min)"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "–",
+  "pg": 73,
+  "tags": [
+   "mav"
+  ]
+ },
+ {
+  "g": "C",
+  "n": "Norepinefrina (noradrenalina) hemitartarato",
+  "a": "1 mg/mL – ampola 4 mL (Genérico – Hipolabor)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV",
+    "SG 5%",
+    "4 ampolas em 234 mL",
+    "Somente infusão contínua"
+   ]
+  ],
+  "ta": "24h",
+  "rf": "–",
+  "obs": "Preferir acesso CENTRAL. Menor oxidação em SG 5%. Fotossensível.",
+  "tags": [
+   "mav",
+   "foto",
+   "flebite"
+  ],
+  "fleb": "Sim",
+  "pg": 74
+ },
+ {
+  "g": "C",
+  "n": "Metoprolol tartarato",
+  "a": "1 mg/mL – ampola 5 mL (Betacris® – Cristália)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV direto",
+    "SF 0,9%, SG 5% ou RL",
+    "Sem diluição",
+    "2–5 min"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9%, SG 5% ou RL",
+    "Até 10 mg em 50–100 mL · 20 mg em 500 mL",
+    "30–60 min"
+   ]
+  ],
+  "ta": "12h (infusão)",
+  "rf": "–",
+  "obs": "–",
+  "pg": 74,
+  "tags": [
+   "mav"
+  ]
+ },
+ {
+  "g": "C",
+  "n": "Nitroglicerina",
+  "a": "5 mg/mL – ampola 10 mL (Tridil® – Cristália)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV",
+    "SF 0,9% ou SG 5%",
+    "100 mcg/mL: 5 mL/250 mL ou 10 mL/500 mL · 200 mcg/mL: 10 mL/250 mL ou 20 mL/500 mL · 400 mcg/mL: 20 mL/250 mL ou 40 mL/500 mL",
+    "Somente em BIC"
+   ]
+  ],
+  "ta": "48h",
+  "rf": "–",
+  "obs": "Interage com PVC – parte do fármaco adsorve ao plástico.",
+  "tags": [],
+  "pg": 75
+ },
+ {
+  "g": "C",
+  "n": "Nitroprussiato de sódio",
+  "a": "25 mg/mL – ampola 2 mL (Nitrop® – Hypofarma)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "IV",
+    "SG 5%",
+    "2 mL/500 mL = 100 mcg/mL · 2 mL/250 mL = 200 mcg/mL",
+    "Em BIC"
+   ]
+  ],
+  "ta": "24h protegido da luz",
+  "rf": "–",
+  "obs": "MUITO fotossensível – proteger da luz durante toda a administração. Pode liberar cianeto – monitorar sinais de intoxicação.",
+  "tags": [
+   "mav",
+   "foto",
+   "alerta"
+  ],
+  "pg": 75
+ },
+ {
+  "g": "C",
+  "n": "Vasopressina",
+  "a": "20 UI/mL – ampola 1 mL (Encrise® – Biolab)",
+  "rec": "Não necessita",
+  "vias": [
+   [
+    "SC",
+    "–",
+    "Sem diluição; volume máx. 0,5 mL",
+    "–"
+   ],
+   [
+    "IM",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "IV direto",
+    "SF 0,9% ou SG 5%",
+    "Sem diluição",
+    "Bolus"
+   ],
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "100 mL (máx. 1 U/mL)",
+    "20–30 min · 0,01–0,04 U/min"
+   ]
+  ],
+  "ta": "–",
+  "rf": "–",
+  "obs": "Bolus sem diluição SOMENTE em PCR. Choque: infusão contínua diluída em BIC, nunca bolus puro. Preferir veia central/periférica profunda (necrose por extravasamento).",
+  "tags": [
+   "mav",
+   "flebite",
+   "alerta"
+  ],
+  "fleb": "Sim",
+  "pg": 76
+ }
+]

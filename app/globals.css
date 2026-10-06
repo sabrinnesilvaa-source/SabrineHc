@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-plex-sans);
+  --font-mono: var(--font-plex-mono);
+}
+
+body {
+  background: var(--color-slate-50);
+  color: var(--color-slate-900);
+  font-family: var(--font-plex-sans), Arial, Helvetica, sans-serif;
+}
+
+/* Fundo quadriculado suave da tela de login. */
+.fundo-grade {
+  background-image:
+    radial-gradient(ellipse 40% 35% at 12% 20%, rgb(15 118 110 / 0.12), transparent),
+    radial-gradient(ellipse 30% 30% at 95% 95%, rgb(59 130 246 / 0.12), transparent),
+    linear-gradient(rgb(15 118 110 / 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(15 118 110 / 0.04) 1px, transparent 1px);
+  background-size:
+    100% 100%,
+    100% 100%,
+    64px 64px,
+    64px 64px;
+}

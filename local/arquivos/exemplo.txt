@@ -1,0 +1,4 @@
+Este é um documento de exemplo do banco local.
+
+Coloque seus arquivos nesta pasta (local/arquivos) e cadastre-os em
+local/dados-iniciais.json para que apareçam na lista de documentos.
