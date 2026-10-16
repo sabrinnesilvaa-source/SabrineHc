@@ -844,6 +844,27 @@
  {
   "g": "G",
   "n": "Metilprednisolona",
+  "a": "125 mg – frasco-ampola (Unimedrol® – União Química)",
+  "rec": "Diluente próprio 2 mL",
+  "vias": [
+   [
+    "IV infusão",
+    "SF 0,9% ou SG 5%",
+    "20–100 mL",
+    "30 min (lento)"
+   ]
+  ],
+  "ta": "48h",
+  "rf": "–",
+  "obs": "NÃO administrar doses moderadas/altas em push (risco de eventos adversos, como hipotensão e arritmia cardíaca).",
+  "tags": [
+   "alerta"
+  ],
+  "pg": 28
+ },
+ {
+  "g": "G",
+  "n": "Metilprednisolona",
   "a": "500 mg – frasco-ampola (Unimedrol® – União Química)",
   "rec": "Diluente próprio (bacteriostático) 8 mL",
   "vias": [
@@ -1499,9 +1520,10 @@
   ],
   "ta": "24h",
   "rf": "–",
-  "obs": "A critério médico (ACM).",
+  "obs": "ATENÇÃO: ver protocolo de diluição da instituição. A critério médico (ACM).",
   "tags": [
-   "mav"
+   "mav",
+   "alerta"
   ],
   "pg": 37
  },
@@ -1544,9 +1566,10 @@
   ],
   "ta": "48h em SF 0,9% · 6h em SG 5%",
   "rf": "–",
-  "obs": "Superdose: depressão respiratória (bradipneia a apneia). Antagonista: naloxona.",
+  "obs": "ATENÇÃO: ver protocolo de diluição da instituição. Superdose: depressão respiratória (bradipneia a apneia). Antagonista: naloxona.",
   "tags": [
-   "mav"
+   "mav",
+   "alerta"
   ],
   "pg": 38
  },
@@ -1577,9 +1600,10 @@
   ],
   "ta": "24h",
   "rf": "–",
-  "obs": "Superdose: depressão respiratória. Antagonista: naloxona.",
+  "obs": "ATENÇÃO: ver protocolo de diluição da instituição. Superdose: depressão respiratória. Antagonista: naloxona.",
   "tags": [
-   "mav"
+   "mav",
+   "alerta"
   ],
   "pg": 38
  },
@@ -1699,7 +1723,7 @@
   "rec": "Não necessita",
   "vias": [
    [
-    "Infiltração local / IV",
+    "Infiltração local",
     "–",
     "–",
     "–"
@@ -1773,7 +1797,7 @@
  {
   "g": "A",
   "n": "Midazolam",
-  "a": "5 mg/mL – ampola 3 mL (Genérico – Hipolabor)",
+  "a": "5 mg/mL – ampolas 3 mL e 10 mL (Genérico – Hipolabor)",
   "rec": "Não necessita",
   "vias": [
    [
@@ -1797,9 +1821,10 @@
   ],
   "ta": "24h",
   "rf": "3 dias",
-  "obs": "Sedativo potente: administração lenta; dose individualizada e titulada.",
+  "obs": "ATENÇÃO: ver protocolo de diluição da instituição. Sedativo potente: administração lenta; dose individualizada e titulada.",
   "tags": [
-   "mav"
+   "mav",
+   "alerta"
   ],
   "pg": 41
  },
