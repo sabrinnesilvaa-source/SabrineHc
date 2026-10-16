@@ -1,5 +1,6 @@
 import { ChevronDown, LogOut } from "lucide-react";
 import { redirect } from "next/navigation";
+import { connection } from "next/server";
 import { Suspense } from "react";
 import { sair } from "@/app/actions";
 import { usuarioAtual } from "@/lib/auth";
@@ -20,6 +21,8 @@ export default function LayoutPrivado({
 }
 
 async function AreaPrivada({ children }: { children: React.ReactNode }) {
+  // O Supabase usa Date.now() ao conferir a sessão: renderiza só na requisição.
+  await connection();
   const usuario = await usuarioAtual();
 
   if (!usuario) redirect("/");

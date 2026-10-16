@@ -37,8 +37,11 @@ export async function proxy(request: NextRequest) {
       },
     });
 
-    const { data } = await supabase.auth.getClaims();
-    logado = Boolean(data?.claims);
+    // getUser() confere no Supabase; getClaims() só lê o token, que continua
+    // válido mesmo se o usuário foi apagado, e isso fazia o layout e o proxy
+    // se redirecionarem em loop.
+    const { data } = await supabase.auth.getUser();
+    logado = Boolean(data?.user);
   }
 
   const naTelaDeLogin = request.nextUrl.pathname === "/";

@@ -254,27 +254,6 @@
  },
  {
   "g": "G",
-  "n": "Ciclofosfamida",
-  "a": "1000 mg – frasco-ampola (Genuxal® – Baxter)",
-  "rec": "Água para injetáveis 50 mL",
-  "vias": [
-   [
-    "IV",
-    "SF 0,9% ou SG 5%",
-    "–",
-    "–"
-   ]
-  ],
-  "ta": "–",
-  "rf": "24h",
-  "obs": "Após reconstituir, agitar vigorosamente 30–60 s. Usar o mais rápido possível; reconstituída com SF/SG estável 24 h sob refrigeração.",
-  "pg": 20,
-  "tags": [
-   "mav"
-  ]
- },
- {
-  "g": "G",
   "n": "Clonidina",
   "a": "150 mcg/mL – ampola 1 mL (Clonidin® – Cristália)",
   "rec": "Não necessita",
@@ -1105,25 +1084,6 @@
  },
  {
   "g": "G",
-  "n": "Pentoxifilina",
-  "a": "20 mg/mL – ampola 5 mL (Vascer® – União Química)",
-  "rec": "Não necessita",
-  "vias": [
-   [
-    "IV",
-    "SF 0,9% ou SG 5%",
-    "250 ou 500 mL",
-    "2–3 h"
-   ]
-  ],
-  "ta": "24h",
-  "rf": "–",
-  "obs": "–",
-  "pg": 32,
-  "tags": []
- },
- {
-  "g": "G",
   "n": "Sulfato de magnésio 10%",
   "a": "Ampola 10 mL (Genérico – Samtec)",
   "rec": "Não necessita",
@@ -1845,39 +1805,6 @@
  },
  {
   "g": "A",
-  "n": "Midazolam",
-  "a": "1 mg/mL – ampola 5 mL (Genérico – Hipolabor)",
-  "rec": "Não necessita",
-  "vias": [
-   [
-    "IM",
-    "–",
-    "–",
-    "–"
-   ],
-   [
-    "IV direto",
-    "SF 0,9% ou SG 5%",
-    "1–5 mg/mL (máx. 5 mg/mL)",
-    "2–5 min"
-   ],
-   [
-    "IV infusão",
-    "SF 0,9% ou SG 5%",
-    "15 mg para 100–1000 mL",
-    "Anestesia: 0,03–0,1 mg/kg/h · UTI: inicial 0,03–0,3 mg, manutenção 0,03–0,2 mg/kg/h"
-   ]
-  ],
-  "ta": "24h",
-  "rf": "3 dias",
-  "obs": "Sedativo potente: administração lenta; dose individualizada e titulada.",
-  "tags": [
-   "mav"
-  ],
-  "pg": 41
- },
- {
-  "g": "A",
   "n": "Morfina",
   "a": "1 mg/mL – ampola 2 mL (Dimorf® – Cristália)",
   "rec": "Não necessita",
@@ -1995,37 +1922,6 @@
  },
  {
   "g": "A",
-  "n": "Nalbufina",
-  "a": "10 mg/mL – ampola 1 mL (Nubain® – Cristália)",
-  "rec": "Não necessita",
-  "vias": [
-   [
-    "SC",
-    "–",
-    "–",
-    "–"
-   ],
-   [
-    "IM",
-    "–",
-    "–",
-    "–"
-   ],
-   [
-    "IV",
-    "SF 0,9% ou RL",
-    "–",
-    "IV direto 10–15 min"
-   ]
-  ],
-  "ta": "–",
-  "rf": "–",
-  "obs": "–",
-  "pg": 44,
-  "tags": []
- },
- {
-  "g": "A",
   "n": "Naloxona",
   "a": "0,4 mg/mL – ampola 1 mL (Narcan® – Cristália)",
   "rec": "Não necessita",
@@ -2063,27 +1959,6 @@
  },
  {
   "g": "A",
-  "n": "Pancurônio",
-  "a": "2 mg/mL – ampola 2 mL (Pancuron® – Cristália)",
-  "rec": "Não necessita",
-  "vias": [
-   [
-    "IV",
-    "SF 0,9%, SG 5% ou RL",
-    "–",
-    "Bolus direto no equipo de infusão"
-   ]
-  ],
-  "ta": "–",
-  "rf": "–",
-  "obs": "Não há dados suficientes para recomendar infusão contínua.",
-  "tags": [
-   "mav"
-  ],
-  "pg": 45
- },
- {
-  "g": "A",
   "n": "Propofol",
   "a": "10 mg/mL – frasco-ampola 20 mL (Provive® – Claris)",
   "rec": "Não necessita",
@@ -2108,33 +1983,6 @@
    "mav"
   ],
   "pg": 46
- },
- {
-  "g": "A",
-  "n": "Tiopental sódico",
-  "a": "1 g – frasco-ampola (Thiopentax® – Cristália)",
-  "rec": "Água p/ injeção ou SF 0,9%: 40 mL",
-  "vias": [
-   [
-    "IV direto",
-    "–",
-    "1 a 25 mg/mL",
-    "Indução lenta: 2–3 mL de solução 2,5% a cada 20–40 s; doses adicionais 25–50 mg"
-   ],
-   [
-    "IV infusão",
-    "Água p/ injeção ou SF 0,9%",
-    "1 a 25 mg/mL",
-    "Manutenção: solução 0,2 ou 0,4% (procedimentos ≤ 15 min)"
-   ]
-  ],
-  "ta": "–",
-  "rf": "–",
-  "obs": "Doses estimadas para indivíduos saudáveis – titular. Diluente sem traços de CO₂ (evita precipitação).",
-  "tags": [
-   "mav"
-  ],
-  "pg": 47
  },
  {
   "g": "A",
@@ -2378,37 +2226,6 @@
  },
  {
   "g": "M",
-  "n": "Ampicilina + Sulbactam",
-  "a": "1 g + 500 mg – frasco-ampola (Genérico – Novafarma)",
-  "rec": "IM: lidocaína 0,5% 3,2 mL · IV: AD, SF 0,9% ou RL 3,2 mL",
-  "vias": [
-   [
-    "IM",
-    "–",
-    "–",
-    "–"
-   ],
-   [
-    "IV direto",
-    "–",
-    "Máx. 250–125 mg/mL",
-    "3 min"
-   ],
-   [
-    "IV infusão",
-    "SF 0,9%",
-    "100 mL",
-    "15–30 min"
-   ]
-  ],
-  "ta": "–",
-  "rf": "–",
-  "obs": "Descartar solução não utilizada após o tempo indicado.",
-  "pg": 53,
-  "tags": []
- },
- {
-  "g": "M",
   "n": "Azitromicina",
   "a": "500 mg – frasco-ampola (Genérico – ABL)",
   "rec": "Água p/ injetáveis 4,8 mL",
@@ -2448,37 +2265,6 @@
    "alerta"
   ],
   "pg": 54
- },
- {
-  "g": "M",
-  "n": "Aztreonam",
-  "a": "1 g – frasco-ampola (Genérico – BioChimico)",
-  "rec": "IM: AD ou SF 3 mL · IV direto: 6–10 mL AD · Infusão: AD 3 mL",
-  "vias": [
-   [
-    "IM",
-    "–",
-    "–",
-    "–"
-   ],
-   [
-    "IV direto",
-    "–",
-    "–",
-    "3–5 min"
-   ],
-   [
-    "IV infusão",
-    "SF 0,9% ou SG 5%",
-    "100 mL",
-    "20–60 min"
-   ]
-  ],
-  "ta": "24h",
-  "rf": "–",
-  "obs": "–",
-  "pg": 54,
-  "tags": []
  },
  {
   "g": "M",
@@ -2664,37 +2450,6 @@
  },
  {
   "g": "M",
-  "n": "Ceftazidima",
-  "a": "1 g – frasco-ampola (Cefazima® – BioChimico)",
-  "rec": "IM: AD, SF ou SG 5% 3 mL · IV: 10 mL",
-  "vias": [
-   [
-    "IM",
-    "–",
-    "–",
-    "–"
-   ],
-   [
-    "IV direto",
-    "–",
-    "–",
-    "3–5 min"
-   ],
-   [
-    "IV infusão",
-    "SF 0,9%, SG 5% ou RL",
-    "50–100 mL",
-    "15–30 min"
-   ]
-  ],
-  "ta": "–",
-  "rf": "–",
-  "obs": "Precipita com aminoglicosídeos – administrar separadamente.",
-  "pg": 58,
-  "tags": []
- },
- {
-  "g": "M",
   "n": "Ceftriaxona sódica",
   "a": "1 g – frasco-ampola (Genérico – Aurobindo)",
   "rec": "Água p/ injetáveis 10 mL",
@@ -2821,31 +2576,6 @@
  },
  {
   "g": "M",
-  "n": "Cloranfenicol succinato sódico",
-  "a": "1 g – frasco-ampola (Genérico – Novafarma)",
-  "rec": "Água p/ injetáveis 5 mL (volume final 5,8 mL)",
-  "vias": [
-   [
-    "IV",
-    "Água p/ injetáveis",
-    "10 mL",
-    "Mínimo 1 min"
-   ],
-   [
-    "IV infusão",
-    "SF 0,9%, SG 5% ou RL",
-    "50–250 mL",
-    "Mínimo 30 min"
-   ]
-  ],
-  "ta": "Uso imediato",
-  "rf": "–",
-  "obs": "–",
-  "pg": 61,
-  "tags": []
- },
- {
-  "g": "M",
   "n": "Fluconazol",
   "a": "2 mg/mL – bolsa sistema fechado 100 mL (Genérico – Sanobiol)",
   "rec": "Não necessita",
@@ -2894,27 +2624,6 @@
  },
  {
   "g": "M",
-  "n": "Imipeném + Cilastatina",
-  "a": "500 mg + 500 mg – frasco-ampola (Tiepem® – BioChimico)",
-  "rec": "SF 0,9% 20 mL",
-  "vias": [
-   [
-    "IV",
-    "SF 0,9% ou SG 5%",
-    "100 mL",
-    "20–30 min ou prolongada 3 h (tempo-dependente)"
-   ]
-  ],
-  "ta": "4h",
-  "rf": "24h",
-  "obs": "INCOMPATÍVEL com RL e com água p/ injetáveis. Risco de convulsões. NÃO fazer em push.",
-  "tags": [
-   "alerta"
-  ],
-  "pg": 62
- },
- {
-  "g": "M",
   "n": "Levofloxacino",
   "a": "5 mg/mL – bolsa 100 mL (Levotac® – Cristália)",
   "rec": "Não necessita",
@@ -2931,27 +2640,6 @@
   "obs": "Usar imediatamente (até 3 h).",
   "pg": 63,
   "tags": []
- },
- {
-  "g": "M",
-  "n": "Linezolida",
-  "a": "2 mg/mL – bolsa 300 mL (Genérico – Beker)",
-  "rec": "Não necessita",
-  "vias": [
-   [
-    "IV",
-    "–",
-    "Pronto para uso",
-    "30–120 min"
-   ]
-  ],
-  "ta": "–",
-  "rf": "–",
-  "obs": "Proteger da luz até o uso. Não adicionar aditivos. Contém açúcar – cautela em diabéticos.",
-  "tags": [
-   "foto"
-  ],
-  "pg": 63
  },
  {
   "g": "M",
@@ -3183,56 +2871,6 @@
    "alerta"
   ],
   "pg": 67
- },
- {
-  "g": "M",
-  "n": "Teicoplanina",
-  "a": "400 mg – frasco-ampola (Teiplan® – União Química)",
-  "rec": "Diluente próprio 3 mL",
-  "vias": [
-   [
-    "IM",
-    "–",
-    "–",
-    "–"
-   ],
-   [
-    "IV direto",
-    "SF 0,9%, SG 5% ou RL",
-    "10 mL",
-    "–"
-   ],
-   [
-    "IV infusão",
-    "SF 0,9%, SG 5% ou RL",
-    "50–100 mL",
-    "60 min"
-   ]
-  ],
-  "ta": "24h",
-  "rf": "–",
-  "obs": "Se espumar na reconstituição, repousar 15 min antes de usar.",
-  "pg": 67,
-  "tags": []
- },
- {
-  "g": "M",
-  "n": "Tigeciclina",
-  "a": "50 mg – frasco-ampola (Tygacil® – Wyeth)",
-  "rec": "SF 0,9% ou SG 5%: 5,3 mL (10 mg/mL); retirar 5 mL = 50 mg",
-  "vias": [
-   [
-    "IV infusão",
-    "SF 0,9%, SG 5% ou RL",
-    "5 mL reconstituídos em bolsa de 100 mL",
-    "30–60 min"
-   ]
-  ],
-  "ta": "–",
-  "rf": "–",
-  "obs": "Agitar DELICADAMENTE (movimentos circulares). Sempre por infusão. Dose inicial 100 mg, depois 50 mg 12/12 h – ambas em 100 mL.",
-  "pg": 68,
-  "tags": []
  },
  {
   "g": "M",
