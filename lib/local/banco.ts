@@ -33,7 +33,7 @@ type DadosIniciais = {
 
 const global = globalThis as { bancoLocal?: DatabaseSync };
 
-function banco() {
+export function banco() {
   if (global.bancoLocal) return global.bancoLocal;
 
   const db = new DatabaseSync(path.join(PASTA, "banco.db"));
@@ -56,6 +56,31 @@ function banco() {
       caminho text not null,
       categoria text not null default 'protocolos',
       criado_em text not null default current_timestamp
+    );
+    create table if not exists almox_itens (
+      id text primary key,
+      codigo text not null unique,
+      descricao text not null,
+      unidade text not null default 'UN',
+      minimo real not null default 0,
+      local text,
+      criado_em text not null default current_timestamp
+    );
+    create table if not exists almox_movimentos (
+      id text primary key,
+      item_id text not null references almox_itens (id),
+      tipo text not null,
+      qtd real not null,
+      data text not null,
+      origem_destino text,
+      retirado_por text,
+      obs text,
+      estorno_de text,
+      estornado integer not null default 0,
+      motivo_estorno text,
+      registrado_por text not null,
+      registrado_email text not null,
+      criado_em text not null default (strftime('%Y-%m-%dT%H:%M:%fZ'))
     );
   `);
 

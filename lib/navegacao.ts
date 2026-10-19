@@ -1,4 +1,10 @@
-import { FileText, LayoutGrid, Pill, type LucideIcon } from "lucide-react";
+import {
+  FileText,
+  LayoutGrid,
+  Pill,
+  Warehouse,
+  type LucideIcon,
+} from "lucide-react";
 
 export const SITE = {
   sigla: "S",
@@ -31,6 +37,12 @@ export const NAVEGACAO: ItemNavegacao[] = [
     titulo: "Documentos",
     descricao: "Escolha uma categoria para ver os documentos",
     icone: FileText,
+  },
+  {
+    href: "/almoxarifado",
+    titulo: "Almoxarifado",
+    descricao: "Entradas, saídas, saldo e inventário de materiais",
+    icone: Warehouse,
   },
   {
     href: "/guia-diluicao",
