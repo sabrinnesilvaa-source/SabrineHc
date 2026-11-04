@@ -142,7 +142,11 @@ function lerCsv(texto: string) {
   });
 }
 
-export function Almoxarifado({ inicial }: { inicial: Dados }) {
+// Quem só consulta vê o painel e os relatórios; as abas que editam somem.
+const ABAS_CONSULTA: Aba[] = ["painel", "rel"];
+
+export function Almoxarifado({ inicial, podeEditar }: { inicial: Dados; podeEditar: boolean }) {
+  const abas = podeEditar ? ABAS : ABAS.filter((a) => ABAS_CONSULTA.includes(a.id));
   const [dados, setDados] = useState<Dados>(inicial);
   const [aba, setAba] = useState<Aba>("painel");
   const [pendente, iniciar] = useTransition();
@@ -173,7 +177,7 @@ export function Almoxarifado({ inicial }: { inicial: Dados }) {
   return (
     <div className="grid gap-4">
       <nav className="flex flex-wrap gap-1" role="tablist">
-        {ABAS.map((a) => (
+        {abas.map((a) => (
           <button
             key={a.id}
             role="tab"
@@ -186,9 +190,9 @@ export function Almoxarifado({ inicial }: { inicial: Dados }) {
         ))}
       </nav>
       {aba === "painel" && <Painel {...contexto} />}
-      {aba === "mov" && <Movimentar {...contexto} />}
-      {aba === "itens" && <Itens {...contexto} />}
-      {aba === "inv" && <Inventario {...contexto} />}
+      {podeEditar && aba === "mov" && <Movimentar {...contexto} />}
+      {podeEditar && aba === "itens" && <Itens {...contexto} />}
+      {podeEditar && aba === "inv" && <Inventario {...contexto} />}
       {aba === "rel" && <Relatorios {...contexto} />}
     </div>
   );

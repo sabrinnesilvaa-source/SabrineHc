@@ -30,7 +30,15 @@ export function LoginForm() {
             autoComplete="username"
             defaultValue={estado.email}
             required
-            className={`${campo} pr-4`}
+            autoCapitalize="characters"
+            onInput={(e) => {
+              // O usuário aparece sempre em maiúsculas.
+              const entrada = e.currentTarget;
+              const posicao = entrada.selectionStart;
+              entrada.value = entrada.value.toUpperCase();
+              entrada.setSelectionRange(posicao, posicao);
+            }}
+            className={`${campo} pr-4 uppercase`}
           />
         </div>
       </div>

@@ -1,6 +1,6 @@
 "use server";
 
-import { usuarioAtual } from "@/lib/auth";
+import { podeEditar, usuarioAtual } from "@/lib/auth";
 import {
   apagarItem,
   carregarAlmoxarifado,
@@ -30,6 +30,7 @@ async function executar(
 ): Promise<Resultado> {
   const usuario = await usuarioAtual();
   if (!usuario) return { ok: false, erro: "Sua sessão expirou. Entre de novo." };
+  if (!podeEditar(usuario)) return { ok: false, erro: "Seu usuário só pode consultar." };
   try {
     const erro = await acao(usuario);
     if (erro) return { ok: false, erro };
@@ -58,8 +59,12 @@ function limparItem(d: Partial<DadosItem>): DadosItem | string {
   return item;
 }
 
-export async function recarregar() {
-  return executar(async () => {});
+// Só leitura: liberado para todos que estão logados.
+export async function recarregar(): Promise<Resultado> {
+  if (!(await usuarioAtual())) return { ok: false, erro: "Sua sessão expirou. Entre de novo." };
+  const dados = await carregarAlmoxarifado();
+  if (!dados) return { ok: false, erro: "Não foi possível consultar o almoxarifado." };
+  return { ok: true, ...dados };
 }
 
 export async function salvarItem(dados: Partial<DadosItem>, id?: string) {

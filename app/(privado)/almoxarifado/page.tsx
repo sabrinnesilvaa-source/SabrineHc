@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import { carregarAlmoxarifado } from "@/lib/almoxarifado";
+import { podeEditar, usuarioAtual } from "@/lib/auth";
 import { Almoxarifado } from "./almoxarifado";
 
 export default function PaginaAlmoxarifado() {
@@ -11,7 +12,7 @@ export default function PaginaAlmoxarifado() {
 }
 
 async function Conteudo() {
-  const dados = await carregarAlmoxarifado();
+  const [dados, usuario] = await Promise.all([carregarAlmoxarifado(), usuarioAtual()]);
 
   if (!dados) {
     return (
@@ -22,5 +23,5 @@ async function Conteudo() {
       </p>
     );
   }
-  return <Almoxarifado inicial={dados} />;
+  return <Almoxarifado inicial={dados} podeEditar={podeEditar(usuario)} />;
 }
