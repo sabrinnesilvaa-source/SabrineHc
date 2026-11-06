@@ -11,7 +11,7 @@ function useItemAtual() {
   );
 }
 
-export function BarraLateral() {
+export function BarraLateral({ admin }: { admin: boolean }) {
   const atual = useItemAtual();
 
   return (
@@ -24,7 +24,9 @@ export function BarraLateral() {
         {SITE.sigla}
       </Link>
       <nav className="flex w-full flex-col gap-1 border-t border-slate-200 px-2.5 pt-3">
-        {NAVEGACAO.filter((item) => item.naBarraLateral).map((item) => {
+        {NAVEGACAO.filter(
+          (item) => item.naBarraLateral && (admin || !item.apenasAdmin),
+        ).map((item) => {
           const ativo = item === atual;
           return (
             <Link

@@ -180,3 +180,37 @@ export function buscarDocumentoLocal(id: number) {
     .get(id) as DocumentoLocal | undefined;
   return documento ?? null;
 }
+
+export function listarTodosDocumentosLocais() {
+  return banco()
+    .prepare(
+      "select id, titulo, descricao, caminho, categoria from documentos order by criado_em desc, id desc",
+    )
+    .all() as (DocumentoLocal & { categoria: string })[];
+}
+
+export function inserirDocumentoLocal(doc: {
+  titulo: string;
+  descricao: string | null;
+  caminho: string;
+  categoria: string;
+}) {
+  banco()
+    .prepare(
+      "insert into documentos (titulo, descricao, caminho, categoria) values (?, ?, ?, ?)",
+    )
+    .run(doc.titulo, doc.descricao, doc.caminho, doc.categoria);
+}
+
+export function moverDocumentoLocal(id: number, categoria: string) {
+  banco()
+    .prepare("update documentos set categoria = ? where id = ?")
+    .run(categoria, id);
+}
+
+/** Apaga o registro e devolve o caminho do arquivo, para removê-lo também. */
+export function apagarDocumentoLocal(id: number) {
+  const documento = buscarDocumentoLocal(id);
+  if (documento) banco().prepare("delete from documentos where id = ?").run(id);
+  return documento?.caminho ?? null;
+}

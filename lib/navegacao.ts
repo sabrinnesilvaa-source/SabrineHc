@@ -1,6 +1,7 @@
 import {
   FileText,
   LayoutGrid,
+  Paperclip,
   Pill,
   Warehouse,
   type LucideIcon,
@@ -19,6 +20,7 @@ export type ItemNavegacao = {
   icone: LucideIcon;
   naBarraLateral?: boolean; // sem isso, o item aparece só como cartão no menu
   foraDoMenu?: boolean; // só dá o título do cabeçalho da página
+  apenasAdmin?: boolean; // só aparece para o perfil admin
 };
 
 // Para adicionar uma nova função ao site, crie a página em
@@ -31,6 +33,15 @@ export const NAVEGACAO: ItemNavegacao[] = [
     descricao: "Escolha uma opção para começar",
     icone: LayoutGrid,
     naBarraLateral: true,
+  },
+  {
+    href: "/anexar",
+    titulo: "Anexar documentos",
+    descricao: "Envie, mova e remova documentos das categorias",
+    icone: Paperclip,
+    naBarraLateral: true,
+    foraDoMenu: true,
+    apenasAdmin: true,
   },
   {
     href: "/documentos",

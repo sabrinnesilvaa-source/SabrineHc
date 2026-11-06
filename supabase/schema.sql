@@ -79,3 +79,23 @@ create policy "Logados incluem movimentos"
 drop policy if exists "Logados marcam estorno" on public.almox_movimentos;
 create policy "Logados marcam estorno"
   on public.almox_movimentos for update to authenticated using (true) with check (true);
+
+-- Editor de documentos (/anexar): só o login "admin" envia, move e remove.
+drop policy if exists "Admin altera documentos" on public.documentos;
+create policy "Admin altera documentos"
+  on public.documentos for all
+  to authenticated
+  using (split_part(auth.jwt() ->> 'email', '@', 1) = 'admin')
+  with check (split_part(auth.jwt() ->> 'email', '@', 1) = 'admin');
+
+drop policy if exists "Admin envia arquivos" on storage.objects;
+create policy "Admin envia arquivos"
+  on storage.objects for insert
+  to authenticated
+  with check (bucket_id = 'documentos' and split_part(auth.jwt() ->> 'email', '@', 1) = 'admin');
+
+drop policy if exists "Admin remove arquivos" on storage.objects;
+create policy "Admin remove arquivos"
+  on storage.objects for delete
+  to authenticated
+  using (bucket_id = 'documentos' and split_part(auth.jwt() ->> 'email', '@', 1) = 'admin');
