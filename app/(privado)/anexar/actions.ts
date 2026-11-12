@@ -2,7 +2,7 @@
 
 import fs from "node:fs/promises";
 import path from "node:path";
-import { podeEditar, usuarioAtual } from "@/lib/auth";
+import { ehAdmin, usuarioAtual } from "@/lib/auth";
 import { CATEGORIAS } from "@/lib/categorias";
 import {
   apagarDocumentoLocal,
@@ -44,7 +44,7 @@ function nomeSeguro(nome: string) {
 }
 
 async function exigirAdmin() {
-  if (!podeEditar(await usuarioAtual())) {
+  if (!ehAdmin(await usuarioAtual())) {
     throw new Error("Apenas o admin pode alterar documentos.");
   }
 }

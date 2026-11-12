@@ -54,6 +54,7 @@ export const NAVEGACAO: ItemNavegacao[] = [
     titulo: "Almoxarifado",
     descricao: "Entradas, saídas, saldo e inventário de materiais",
     icone: Warehouse,
+    foraDoMenu: true, // desativado: a página redireciona para o menu
   },
   {
     href: "/guia-diluicao",

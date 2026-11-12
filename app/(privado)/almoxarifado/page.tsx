@@ -1,7 +1,12 @@
+import { redirect } from "next/navigation";
 import { Suspense } from "react";
 import { carregarAlmoxarifado } from "@/lib/almoxarifado";
 import { podeEditar, usuarioAtual } from "@/lib/auth";
 import { Almoxarifado } from "./almoxarifado";
+
+// Almoxarifado desativado. Para reativar, mude para true e tire o
+// "foraDoMenu" do item em lib/navegacao.ts.
+const ATIVO = false;
 
 export default function PaginaAlmoxarifado() {
   return (
@@ -12,6 +17,7 @@ export default function PaginaAlmoxarifado() {
 }
 
 async function Conteudo() {
+  if (!ATIVO) redirect("/menu");
   const [dados, usuario] = await Promise.all([carregarAlmoxarifado(), usuarioAtual()]);
 
   if (!dados) {

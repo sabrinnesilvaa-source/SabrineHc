@@ -1,6 +1,7 @@
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { connection } from "next/server";
 import { Suspense } from "react";
 import { CATEGORIAS } from "@/lib/categorias";
 import { listarDocumentos } from "@/lib/documentos";
@@ -16,6 +17,8 @@ export default function PaginaCategoria({ params }: Props) {
 }
 
 async function DocumentosDaCategoria({ params }: Props) {
+  // A lista vem do banco a cada acesso (links assinados usam a hora atual).
+  await connection();
   const { categoria: slug } = await params;
   const categoria = CATEGORIAS.find((c) => c.slug === slug);
   if (!categoria) notFound();
@@ -36,7 +39,7 @@ async function DocumentosDaCategoria({ params }: Props) {
   return (
     <section className="max-w-3xl">
       <Link
-        href="/documentos"
+        href="/menu"
         className="mb-4 inline-flex items-center gap-1.5 text-sm text-slate-500 hover:text-teal-700"
       >
         <ArrowLeft aria-hidden className="h-4 w-4" />
@@ -86,14 +89,12 @@ async function DocumentosDaCategoria({ params }: Props) {
                   Abrir
                 </Link>
               ) : doc.link ? (
-                <a
-                  href={doc.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href={`/documentos/ver/${doc.id}`}
                   className="shrink-0 rounded-lg border border-slate-200 px-4 py-1.5 text-sm font-semibold text-teal-700 transition hover:bg-teal-50"
                 >
                   Abrir
-                </a>
+                </Link>
               ) : (
                 <span className="shrink-0 text-sm text-slate-400">
                   Arquivo não encontrado
