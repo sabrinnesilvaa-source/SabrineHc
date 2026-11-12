@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
-import { usuarioAtual } from "@/lib/auth";
+import { perfilDe, usuarioAtual, type Perfil } from "@/lib/auth";
+import { podeVerCategoria } from "@/lib/categorias";
 import { buscarDocumentoLocal, PASTA_ARQUIVOS } from "@/lib/local/banco";
 import { modoLocal } from "@/lib/supabase/config";
 import { createClient } from "@/lib/supabase/server";
@@ -16,7 +17,7 @@ const TIPOS: Record<string, string> = {
   ".jpeg": "image/jpeg",
 };
 
-async function lerArquivo(id: string) {
+async function lerArquivo(id: string, perfil: Perfil) {
   if (modoLocal) {
     const documento = buscarDocumentoLocal(Number(id));
     if (!documento) return null;
@@ -32,10 +33,10 @@ async function lerArquivo(id: string) {
   const supabase = await createClient();
   const { data: documento } = await supabase
     .from("documentos")
-    .select("caminho")
+    .select("caminho, categoria")
     .eq("id", id)
     .maybeSingle();
-  if (!documento) return null;
+  if (!documento || !podeVerCategoria(perfil, documento.categoria)) return null;
   const { data, error } = await supabase.storage
     .from("documentos")
     .download(documento.caminho);
@@ -47,12 +48,13 @@ export async function GET(
   _request: Request,
   { params }: { params: Promise<{ id: string }> },
 ) {
-  if (!(await usuarioAtual())) {
+  const usuario = await usuarioAtual();
+  if (!usuario) {
     return new Response("Não autorizado", { status: 401 });
   }
 
   const { id } = await params;
-  const arquivo = await lerArquivo(id);
+  const arquivo = await lerArquivo(id, perfilDe(usuario));
   if (!arquivo) return new Response("Arquivo não encontrado", { status: 404 });
 
   const tipo = TIPOS[path.extname(arquivo.caminho).toLowerCase()];

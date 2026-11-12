@@ -4,8 +4,16 @@ import { connection } from "next/server";
 import { Suspense } from "react";
 import { Carregando } from "./carregando";
 import { sair } from "@/app/actions";
-import { ehAdmin, usuarioAtual } from "@/lib/auth";
+import { ehAdmin, perfilDe, usuarioAtual, type Perfil } from "@/lib/auth";
 import { BarraLateral, TituloDaPagina } from "./navegacao";
+
+const NOME_DO_PERFIL: Record<Perfil, string> = {
+  admin: "Administrador",
+  supervisao: "Supervisão",
+  enfermagem: "Enfermagem",
+  medicos: "Médicos",
+  leitura: "Consulta",
+};
 
 // Tudo dentro de app/(privado) exige login. O proxy.ts já redireciona,
 // mas a sessão é conferida de novo aqui, no servidor.
@@ -27,6 +35,8 @@ async function AreaPrivada({ children }: { children: React.ReactNode }) {
   const usuario = await usuarioAtual();
 
   if (!usuario) redirect("/");
+  // Mostra só o login ("admin"), nunca o e-mail interno ("admin@...").
+  const login = usuario.email.split("@")[0].toLowerCase();
 
   return (
     <div className="flex flex-1">
@@ -39,14 +49,14 @@ async function AreaPrivada({ children }: { children: React.ReactNode }) {
           <details className="relative shrink-0">
             <summary className="flex cursor-pointer list-none items-center gap-3 rounded-lg px-2 py-1 hover:bg-teal-100/60 [&::-webkit-details-marker]:hidden">
               <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-sm font-semibold text-slate-700 uppercase">
-                {usuario.nome.charAt(0)}
+                {login.charAt(0)}
               </span>
               <span className="hidden text-left sm:block">
                 <span className="block font-semibold text-teal-700">
-                  {usuario.nome}
+                  {login}
                 </span>
                 <span className="block text-sm text-slate-500">
-                  {usuario.email}
+                  {NOME_DO_PERFIL[perfilDe(usuario)]}
                 </span>
               </span>
               <ChevronDown aria-hidden className="h-4 w-4 text-teal-700" />

@@ -1,10 +1,11 @@
 import { ArrowLeft, FileText } from "lucide-react";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
+import { perfilDe, usuarioAtual } from "@/lib/auth";
 import { connection } from "next/server";
 import { Suspense } from "react";
 import { Carregando } from "../../carregando";
-import { CATEGORIAS } from "@/lib/categorias";
+import { CATEGORIAS, podeVerCategoria } from "@/lib/categorias";
 import { listarDocumentos } from "@/lib/documentos";
 
 type Props = { params: Promise<{ categoria: string }> };
@@ -23,6 +24,7 @@ async function DocumentosDaCategoria({ params }: Props) {
   const { categoria: slug } = await params;
   const categoria = CATEGORIAS.find((c) => c.slug === slug);
   if (!categoria) notFound();
+  if (!podeVerCategoria(perfilDe(await usuarioAtual()), slug)) redirect("/menu");
 
   const arquivos = await listarDocumentos(categoria.slug);
   const paginas = (categoria.paginas ?? []).map((pagina) => ({

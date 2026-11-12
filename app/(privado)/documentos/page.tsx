@@ -1,20 +1,6 @@
-import { CATEGORIAS } from "@/lib/categorias";
-import { CartaoLink } from "../cartao";
+import { redirect } from "next/navigation";
 
+// As categorias ficam no Menu principal (filtradas por perfil).
 export default function PaginaDocumentos() {
-  return (
-    <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-      {CATEGORIAS.map((categoria) => (
-        <li key={categoria.slug}>
-          <CartaoLink
-            href={`/documentos/${categoria.slug}`}
-            titulo={categoria.titulo}
-            descricao={categoria.descricao}
-            icone={categoria.icone}
-          />
-        </li>
-      ))}
-      {/* Almoxarifado desativado: o cartão saiu daqui e do menu. */}
-    </ul>
-  );
+  redirect("/menu");
 }

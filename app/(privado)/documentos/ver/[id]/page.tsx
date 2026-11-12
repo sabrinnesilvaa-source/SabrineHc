@@ -1,9 +1,10 @@
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
+import { perfilDe, usuarioAtual } from "@/lib/auth";
 import { connection } from "next/server";
 import { Suspense } from "react";
-import { CATEGORIAS } from "@/lib/categorias";
+import { CATEGORIAS, podeVerCategoria } from "@/lib/categorias";
 import { buscarDocumento } from "@/lib/documentos";
 import { Carregando } from "../../../carregando";
 import { LeitorPdf } from "./leitor-pdf";
@@ -27,6 +28,7 @@ async function Visualizador({ params }: Props) {
   const { id } = await params;
   const documento = await buscarDocumento(id);
   if (!documento) notFound();
+  if (!podeVerCategoria(perfilDe(await usuarioAtual()), documento.categoria)) redirect("/menu");
 
   const categoria = CATEGORIAS.find((c) => c.slug === documento.categoria);
   const arquivo = `/documentos/arquivo/${encodeURIComponent(id)}`;
