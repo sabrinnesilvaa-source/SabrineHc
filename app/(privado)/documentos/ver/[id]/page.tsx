@@ -5,6 +5,8 @@ import { connection } from "next/server";
 import { Suspense } from "react";
 import { CATEGORIAS } from "@/lib/categorias";
 import { buscarDocumento } from "@/lib/documentos";
+import { Carregando } from "../../../carregando";
+import { LeitorPdf } from "./leitor-pdf";
 
 // Visualizador: mostra o PDF dentro do site, sem precisar baixar.
 
@@ -14,7 +16,7 @@ type Props = {
 
 export default function PaginaVisualizador({ params }: Props) {
   return (
-    <Suspense fallback={null}>
+    <Suspense fallback={<Carregando texto="Carregando documento…" />}>
       <Visualizador params={params} />
     </Suspense>
   );
@@ -46,11 +48,7 @@ async function Visualizador({ params }: Props) {
       </div>
 
       {/* #toolbar=0 esconde a barra do leitor de PDF (botões de baixar e imprimir). */}
-      <iframe
-        src={`${arquivo}#toolbar=0&navpanes=0`}
-        title={documento.titulo}
-        className="min-h-[60vh] w-full flex-1 rounded-lg border border-slate-200 bg-white"
-      />
+      <LeitorPdf src={`${arquivo}#toolbar=0&navpanes=0`} titulo={documento.titulo} />
     </section>
   );
 }

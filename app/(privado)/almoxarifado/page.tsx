@@ -1,5 +1,6 @@
 import { redirect } from "next/navigation";
 import { Suspense } from "react";
+import { Carregando } from "../carregando";
 import { carregarAlmoxarifado } from "@/lib/almoxarifado";
 import { podeEditar, usuarioAtual } from "@/lib/auth";
 import { Almoxarifado } from "./almoxarifado";
@@ -10,7 +11,7 @@ const ATIVO = false;
 
 export default function PaginaAlmoxarifado() {
   return (
-    <Suspense fallback={null}>
+    <Suspense fallback={<Carregando />}>
       <Conteudo />
     </Suspense>
   );

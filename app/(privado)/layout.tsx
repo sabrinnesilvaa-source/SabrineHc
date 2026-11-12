@@ -2,6 +2,7 @@ import { ChevronDown, LogOut } from "lucide-react";
 import { redirect } from "next/navigation";
 import { connection } from "next/server";
 import { Suspense } from "react";
+import { Carregando } from "./carregando";
 import { sair } from "@/app/actions";
 import { ehAdmin, usuarioAtual } from "@/lib/auth";
 import { BarraLateral, TituloDaPagina } from "./navegacao";
@@ -14,7 +15,7 @@ export default function LayoutPrivado({
   children: React.ReactNode;
 }) {
   return (
-    <Suspense fallback={null}>
+    <Suspense fallback={<Carregando />}>
       <AreaPrivada>{children}</AreaPrivada>
     </Suspense>
   );
