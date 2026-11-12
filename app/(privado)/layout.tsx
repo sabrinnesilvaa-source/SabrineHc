@@ -2,8 +2,9 @@ import { ChevronDown, LogOut } from "lucide-react";
 import { redirect } from "next/navigation";
 import { connection } from "next/server";
 import { Suspense } from "react";
+import { Carregando } from "./carregando";
 import { sair } from "@/app/actions";
-import { podeEditar, usuarioAtual } from "@/lib/auth";
+import { ehAdmin, usuarioAtual } from "@/lib/auth";
 import { BarraLateral, TituloDaPagina } from "./navegacao";
 
 // Tudo dentro de app/(privado) exige login. O proxy.ts já redireciona,
@@ -14,7 +15,7 @@ export default function LayoutPrivado({
   children: React.ReactNode;
 }) {
   return (
-    <Suspense fallback={null}>
+    <Suspense fallback={<Carregando />}>
       <AreaPrivada>{children}</AreaPrivada>
     </Suspense>
   );
@@ -29,7 +30,7 @@ async function AreaPrivada({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="flex flex-1">
-      <BarraLateral admin={podeEditar(usuario)} />
+      <BarraLateral admin={ehAdmin(usuario)} />
 
       <div className="flex min-w-0 flex-1 flex-col">
         <header className="flex items-center justify-between gap-4 bg-teal-50 px-6 py-4 shadow-sm">

@@ -13,17 +13,21 @@ const DOMINIO_DOS_USUARIOS = "@sabrinehc.local";
 
 export type Usuario = { email: string; nome: string };
 
-// Perfil vem do login (parte antes do "@"). Só o admin edita; enfermagem e
-// médicos só consultam. Logins desconhecidos também só consultam.
-export type Perfil = "admin" | "enfermagem" | "medicos" | "leitura";
+// Perfil vem do login (parte antes do "@"). Só o admin e a supervisão editam; enfermagem e
+// médicos só consultam. A supervisão edita como o admin. Logins desconhecidos também só consultam.
+export type Perfil = "admin" | "supervisao" | "enfermagem" | "medicos" | "leitura";
 
 export function perfilDe(usuario: Usuario | null): Perfil {
   const login = usuario?.email.split("@")[0].toLowerCase() ?? "";
-  if (login === "admin" || login === "enfermagem" || login === "medicos") return login;
+  if (login === "admin" || login === "supervisao" || login === "enfermagem" || login === "medicos") return login;
   return "leitura";
 }
 
-export const podeEditar = (usuario: Usuario | null) => perfilDe(usuario) === "admin";
+// Supervisão edita como o admin (almoxarifado), mas Anexar documentos é só do admin.
+export const podeEditar = (usuario: Usuario | null) =>
+  ["admin", "supervisao"].includes(perfilDe(usuario));
+
+export const ehAdmin = (usuario: Usuario | null) => perfilDe(usuario) === "admin";
 
 export async function usuarioAtual(): Promise<Usuario | null> {
   if (modoLocal) {

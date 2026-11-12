@@ -1,7 +1,9 @@
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, FileText } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { connection } from "next/server";
 import { Suspense } from "react";
+import { Carregando } from "../../carregando";
 import { CATEGORIAS } from "@/lib/categorias";
 import { listarDocumentos } from "@/lib/documentos";
 
@@ -9,13 +11,15 @@ type Props = { params: Promise<{ categoria: string }> };
 
 export default function PaginaCategoria({ params }: Props) {
   return (
-    <Suspense fallback={null}>
+    <Suspense fallback={<Carregando />}>
       <DocumentosDaCategoria params={params} />
     </Suspense>
   );
 }
 
 async function DocumentosDaCategoria({ params }: Props) {
+  // A lista vem do banco a cada acesso (links assinados usam a hora atual).
+  await connection();
   const { categoria: slug } = await params;
   const categoria = CATEGORIAS.find((c) => c.slug === slug);
   if (!categoria) notFound();
@@ -34,9 +38,9 @@ async function DocumentosDaCategoria({ params }: Props) {
   ];
 
   return (
-    <section className="max-w-3xl">
+    <section>
       <Link
-        href="/documentos"
+        href="/menu"
         className="mb-4 inline-flex items-center gap-1.5 text-sm text-slate-500 hover:text-teal-700"
       >
         <ArrowLeft aria-hidden className="h-4 w-4" />
@@ -64,45 +68,55 @@ async function DocumentosDaCategoria({ params }: Props) {
           Nenhum documento nesta categoria ainda.
         </p>
       ) : (
-        <ul className="flex flex-col gap-3">
-          {documentos.map((doc) => (
-            <li
-              key={doc.id}
-              className="flex items-center justify-between gap-4 rounded-lg border border-slate-200 bg-white px-4 py-3"
-            >
-              <div className="min-w-0">
-                <h3 className="truncate font-semibold text-slate-900">
-                  {doc.titulo}
-                </h3>
-                {doc.descricao && (
-                  <p className="text-sm text-slate-500">{doc.descricao}</p>
-                )}
-              </div>
-              {doc.interno && doc.link ? (
-                <Link
-                  href={doc.link}
-                  className="shrink-0 rounded-lg border border-slate-200 px-4 py-1.5 text-sm font-semibold text-teal-700 transition hover:bg-teal-50"
-                >
-                  Abrir
-                </Link>
-              ) : doc.link ? (
-                <a
-                  href={doc.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="shrink-0 rounded-lg border border-slate-200 px-4 py-1.5 text-sm font-semibold text-teal-700 transition hover:bg-teal-50"
-                >
-                  Abrir
-                </a>
-              ) : (
-                <span className="shrink-0 text-sm text-slate-400">
-                  Arquivo não encontrado
+        <ul className="grid gap-3 md:grid-cols-2 2xl:grid-cols-3">
+          {documentos.map((doc) => {
+            const { codigo, nome } = separarCodigo(doc.titulo);
+            const href = doc.interno ? doc.link : doc.link && `/documentos/ver/${doc.id}`;
+            const conteudo = (
+              <>
+                <span className="flex h-11 w-14 shrink-0 items-center justify-center rounded-lg bg-teal-50 text-center text-xs leading-tight font-bold text-teal-700">
+                  {codigo ?? <FileText aria-hidden className="h-5 w-5" />}
                 </span>
-              )}
-            </li>
-          ))}
+                <span className="min-w-0 flex-1">
+                  <span className="line-clamp-2 text-sm font-semibold text-slate-900">
+                    {nome}
+                  </span>
+                  {doc.descricao && (
+                    <span className="mt-0.5 block truncate text-xs text-slate-500">
+                      {doc.descricao}
+                    </span>
+                  )}
+                </span>
+                <span className={`shrink-0 text-sm font-semibold ${href ? "text-teal-700" : "text-slate-400"}`}>
+                  {href ? "Abrir" : "Indisponível"}
+                </span>
+              </>
+            );
+            const classe =
+              "flex h-full items-center gap-4 rounded-lg border border-slate-200 bg-white px-4 py-3";
+            return (
+              <li key={doc.id}>
+                {href ? (
+                  <Link
+                    href={href}
+                    className={`${classe} transition hover:border-teal-600 hover:shadow-md`}
+                  >
+                    {conteudo}
+                  </Link>
+                ) : (
+                  <div className={classe}>{conteudo}</div>
+                )}
+              </li>
+            );
+          })}
         </ul>
       )}
     </section>
   );
+}
+
+// "POP 01 – Sepse" vira { codigo: "POP 01", nome: "Sepse" }.
+function separarCodigo(titulo: string) {
+  const m = titulo.match(/^((?:POP|FX)\s*\d+)\s*[–-]\s*(.+)$/i);
+  return m ? { codigo: m[1], nome: m[2] } : { codigo: null, nome: titulo };
 }

@@ -1,4 +1,5 @@
 import {
+  BookOpen,
   CalendarDays,
   ChartPie,
   ClipboardList,
@@ -31,6 +32,12 @@ export const CATEGORIAS: Categoria[] = [
     titulo: "Fluxos",
     descricao: "Fluxogramas de atendimento e processos",
     icone: Workflow,
+  },
+  {
+    slug: "manuais",
+    titulo: "Manuais",
+    descricao: "Manuais institucionais e de setores",
+    icone: BookOpen,
   },
   {
     slug: "escala-de-enfermagem",

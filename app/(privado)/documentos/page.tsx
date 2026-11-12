@@ -1,4 +1,3 @@
-import { Warehouse } from "lucide-react";
 import { CATEGORIAS } from "@/lib/categorias";
 import { CartaoLink } from "../cartao";
 
@@ -15,14 +14,7 @@ export default function PaginaDocumentos() {
           />
         </li>
       ))}
-      <li>
-        <CartaoLink
-          href="/almoxarifado"
-          titulo="Almoxarifado"
-          descricao="Entradas, saídas, saldo e inventário de materiais"
-          icone={Warehouse}
-        />
-      </li>
+      {/* Almoxarifado desativado: o cartão saiu daqui e do menu. */}
     </ul>
   );
 }

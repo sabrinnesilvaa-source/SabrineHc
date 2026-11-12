@@ -1,14 +1,15 @@
 import { redirect } from "next/navigation";
 import { connection } from "next/server";
 import { Suspense } from "react";
-import { podeEditar, usuarioAtual } from "@/lib/auth";
+import { Carregando } from "../carregando";
+import { ehAdmin, usuarioAtual } from "@/lib/auth";
 import { modoLocal, supabaseKey, supabaseUrl } from "@/lib/supabase/config";
 import { listarParaEditor } from "./actions";
 import { Editor } from "./editor";
 
 export default function PaginaAnexar() {
   return (
-    <Suspense fallback={null}>
+    <Suspense fallback={<Carregando />}>
       <Conteudo />
     </Suspense>
   );
@@ -17,7 +18,7 @@ export default function PaginaAnexar() {
 async function Conteudo() {
   // A sessão usa Date.now(): renderiza só na requisição.
   await connection();
-  if (!podeEditar(await usuarioAtual())) redirect("/menu");
+  if (!ehAdmin(await usuarioAtual())) redirect("/menu");
 
   let documentos = null;
   try {

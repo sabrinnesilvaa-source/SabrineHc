@@ -1,4 +1,4 @@
-import { listarDocumentosLocais } from "./local/banco";
+import { buscarDocumentoLocal, listarDocumentosLocais } from "./local/banco";
 import { modoLocal } from "./supabase/config";
 import { createClient } from "./supabase/server";
 
@@ -11,6 +11,23 @@ export type Documento = {
   descricao: string | null;
   link: string | null; // null quando o arquivo não foi encontrado
 };
+
+/** Título e categoria de um documento, para o visualizador. */
+export async function buscarDocumento(
+  id: string,
+): Promise<{ titulo: string; categoria: string | null } | null> {
+  if (modoLocal) {
+    const doc = buscarDocumentoLocal(Number(id));
+    return doc ? { titulo: doc.titulo, categoria: null } : null;
+  }
+  const supabase = await createClient();
+  const { data } = await supabase
+    .from("documentos")
+    .select("titulo, categoria")
+    .eq("id", id)
+    .maybeSingle();
+  return data;
+}
 
 /** Lista os documentos de uma categoria; devolve null se não foi possível consultar. */
 export async function listarDocumentos(
