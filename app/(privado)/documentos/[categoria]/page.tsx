@@ -5,7 +5,7 @@ import { perfilDe, usuarioAtual } from "@/lib/auth";
 import { connection } from "next/server";
 import { Suspense } from "react";
 import { Carregando } from "../../carregando";
-import { CATEGORIAS, podeVerCategoria } from "@/lib/categorias";
+import { CATEGORIAS, podeVerCategoria, subcategorias } from "@/lib/categorias";
 import { listarDocumentos } from "@/lib/documentos";
 
 type Props = { params: Promise<{ categoria: string }> };
@@ -27,6 +27,14 @@ async function DocumentosDaCategoria({ params }: Props) {
   if (!podeVerCategoria(perfilDe(await usuarioAtual()), slug)) redirect("/menu");
 
   const arquivos = await listarDocumentos(categoria.slug);
+  const filhas = subcategorias(categoria.slug).map((c) => ({
+    id: c.slug,
+    titulo: c.titulo,
+    descricao: c.descricao,
+    link: `/documentos/${c.slug}`,
+    interno: true,
+  }));
+  const pai = categoria.pai && CATEGORIAS.find((c) => c.slug === categoria.pai);
   const paginas = (categoria.paginas ?? []).map((pagina) => ({
     id: pagina.href,
     titulo: pagina.titulo,
@@ -35,6 +43,7 @@ async function DocumentosDaCategoria({ params }: Props) {
     interno: true,
   }));
   const documentos = arquivos && [
+    ...filhas,
     ...paginas,
     ...arquivos.map((doc) => ({ ...doc, interno: false })),
   ];

@@ -3,7 +3,7 @@
 import { createBrowserClient } from "@supabase/ssr";
 import { LayoutList, Trash2, Upload } from "lucide-react";
 import { useRef, useState, useTransition } from "react";
-import { CATEGORIAS } from "@/lib/categorias";
+import { CATEGORIAS, nomeCategoria } from "@/lib/categorias";
 import {
   enviarLocal,
   moverDocumento,
@@ -139,7 +139,7 @@ export function Editor({
         {CATEGORIAS.map((c) => (
           <li key={c.slug}>
             <CartaoContagem
-              titulo={c.titulo}
+              titulo={nomeCategoria(c)}
               total={contagem(c.slug)}
               icone={c.icone}
               ativo={filtro === c.slug}
@@ -173,7 +173,7 @@ export function Editor({
               </option>
               {CATEGORIAS.map((c) => (
                 <option key={c.slug} value={c.slug}>
-                  {c.titulo}
+                  {nomeCategoria(c)}
                 </option>
               ))}
             </select>
@@ -264,7 +264,7 @@ export function Editor({
                       >
                         {CATEGORIAS.map((c) => (
                           <option key={c.slug} value={c.slug}>
-                            {c.titulo}
+                            {nomeCategoria(c)}
                           </option>
                         ))}
                       </select>
