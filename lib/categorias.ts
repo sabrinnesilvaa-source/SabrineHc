@@ -2,6 +2,7 @@ import {
   BookOpen,
   CalendarDays,
   ChartPie,
+  ArrowLeftRight,
   ClipboardList,
   Database,
   Pill,
@@ -44,6 +45,13 @@ export const CATEGORIAS: Categoria[] = [
     titulo: "Manuais",
     descricao: "Manuais institucionais e de setores",
     icone: BookOpen,
+  },
+  {
+    slug: "transicao",
+    perfis: ["medicos", "enfermagem"],
+    titulo: "Transição",
+    descricao: "Documentos de transição de cuidado",
+    icone: ArrowLeftRight,
   },
   {
     slug: "escala-de-enfermagem",
