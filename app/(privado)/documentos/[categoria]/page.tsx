@@ -89,7 +89,7 @@ async function DocumentosDaCategoria({ params }: Props) {
                   {codigo ?? <FileText aria-hidden className="h-5 w-5" />}
                 </span>
                 <span className="min-w-0 flex-1">
-                  <span className="line-clamp-2 text-sm font-semibold text-slate-900">
+                  <span className="line-clamp-2 text-sm font-semibold text-slate-900 uppercase">
                     {nome}
                   </span>
                   {doc.descricao && (
