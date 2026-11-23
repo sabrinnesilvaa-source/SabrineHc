@@ -2,6 +2,7 @@ import { connection } from "next/server";
 import { Suspense } from "react";
 import { perfilDe, usuarioAtual } from "@/lib/auth";
 import { categoriasDoPerfil } from "@/lib/categorias";
+import { contarPorCategoria } from "@/lib/documentos";
 import { NAVEGACAO } from "@/lib/navegacao";
 import { CartaoLink } from "../cartao";
 import { Carregando } from "../carregando";
@@ -19,6 +20,7 @@ export default function PaginaMenu() {
 async function Cartoes() {
   await connection(); // depende de quem está logado
   const perfil = perfilDe(await usuarioAtual());
+  const totais = await contarPorCategoria(perfil);
   const itens = NAVEGACAO.filter(
     (item) => item.href !== "/menu" && item.href !== "/documentos" && !item.foraDoMenu,
   );
@@ -32,6 +34,7 @@ async function Cartoes() {
             titulo={categoria.titulo}
             descricao={categoria.descricao}
             icone={categoria.icone}
+            total={totais[categoria.slug]}
           />
         </li>
       ))}

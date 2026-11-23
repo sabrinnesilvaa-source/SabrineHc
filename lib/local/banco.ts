@@ -174,6 +174,13 @@ export function listarDocumentosLocais(categoria: string) {
     .all(categoria) as DocumentoLocal[];
 }
 
+export function contarDocumentoLocal(categoria: string) {
+  const { total } = banco()
+    .prepare("select count(*) as total from documentos where categoria = ?")
+    .get(categoria) as { total: number };
+  return total;
+}
+
 export function buscarDocumentoLocal(id: number) {
   const documento = banco()
     .prepare("select id, titulo, descricao, caminho from documentos where id = ?")

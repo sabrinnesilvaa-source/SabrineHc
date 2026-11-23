@@ -1,4 +1,10 @@
-import { buscarDocumentoLocal, listarDocumentosLocais } from "./local/banco";
+import {
+  buscarDocumentoLocal,
+  contarDocumentoLocal,
+  listarDocumentosLocais,
+} from "./local/banco";
+import { CATEGORIAS, podeVerCategoria } from "./categorias";
+import type { Perfil } from "./auth";
 import { modoLocal } from "./supabase/config";
 import { createClient } from "./supabase/server";
 
@@ -27,6 +33,42 @@ export async function buscarDocumento(
     .eq("id", id)
     .maybeSingle();
   return data;
+}
+
+/**
+ * Quantidade de itens por categoria principal, para os cartões do menu.
+ * Soma as subcategorias que o perfil pode ver e as páginas do próprio site.
+ * Categoria cuja consulta falhou fica de fora, para não mostrar um total errado.
+ */
+export async function contarPorCategoria(
+  perfil: Perfil,
+): Promise<Record<string, number>> {
+  const visiveis = CATEGORIAS.filter((c) => podeVerCategoria(perfil, c.slug));
+  const supabase = modoLocal ? null : await createClient();
+
+  const totais = new Map(
+    await Promise.all(
+      visiveis.map(async (c): Promise<[string, number | null]> => {
+        if (!supabase) return [c.slug, contarDocumentoLocal(c.slug)];
+        const { count, error } = await supabase
+          .from("documentos")
+          .select("id", { count: "exact", head: true })
+          .eq("categoria", c.slug);
+        return [c.slug, error ? null : (count ?? 0)];
+      }),
+    ),
+  );
+
+  const resultado: Record<string, number> = {};
+  for (const c of visiveis.filter((v) => !v.pai)) {
+    const grupo = visiveis.filter((v) => v.slug === c.slug || v.pai === c.slug);
+    const valores = grupo.map((v) => totais.get(v.slug));
+    if (valores.some((v) => v == null)) continue;
+    resultado[c.slug] =
+      valores.reduce<number>((soma, v) => soma + (v ?? 0), 0) +
+      grupo.reduce((soma, v) => soma + (v.paginas?.length ?? 0), 0);
+  }
+  return resultado;
 }
 
 /** Lista os documentos de uma categoria; devolve null se não foi possível consultar. */

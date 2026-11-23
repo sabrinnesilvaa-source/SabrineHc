@@ -2,6 +2,7 @@
 
 import fs from "node:fs/promises";
 import path from "node:path";
+import { revalidatePath } from "next/cache";
 import { ehAdmin, usuarioAtual } from "@/lib/auth";
 import { CATEGORIAS } from "@/lib/categorias";
 import {
@@ -71,6 +72,7 @@ async function executar(acao: () => Promise<void>): Promise<Resultado> {
   try {
     await exigirAdmin();
     await acao();
+    revalidatePath("/menu"); // atualiza as quantidades dos cartões
     return { ok: true, documentos: await listarParaEditor() };
   } catch (e) {
     return { ok: false, erro: e instanceof Error ? e.message : String(e) };
