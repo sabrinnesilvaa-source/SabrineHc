@@ -34,6 +34,9 @@ export function Editor({
   } | null>(null);
   const [pendente, iniciar] = useTransition();
   const formRef = useRef<HTMLFormElement>(null);
+  const loteRef = useRef<HTMLFormElement>(null);
+  const [progresso, setProgresso] = useState<string | null>(null);
+  const [resumoLote, setResumoLote] = useState<{ erro: boolean; texto: string } | null>(null);
 
   function aplicar(resultado: Resultado, sucesso: string) {
     if (resultado.ok) {
@@ -82,6 +85,83 @@ export function Editor({
         });
       }
       if (aplicar(resultado, "Documento enviado.")) formRef.current?.reset();
+    });
+  }
+
+  // Envio de vários arquivos de uma vez. O título vem do nome do arquivo
+  // ("POP 02 - SEPSE.pdf" vira "POP 02 – SEPSE"). Se a categoria já tiver um
+  // documento com o mesmo código (POP 02), ele é substituído pelo novo.
+  function enviarLote(form: FormData) {
+    setMensagem(null);
+    setResumoLote(null);
+    const categoria = String(form.get("categoria") ?? "");
+    const arquivos = form
+      .getAll("arquivos")
+      .filter((a): a is File => a instanceof File && a.size > 0)
+      .sort((a, b) => a.name.localeCompare(b.name, "pt-BR", { numeric: true }));
+    if (!categoria || arquivos.length === 0) {
+      setResumoLote({ erro: true, texto: "Escolha a categoria e os arquivos." });
+      return;
+    }
+    iniciar(async () => {
+      let lista = documentos;
+      const falhas: string[] = [];
+      let substituidos = 0;
+      for (const [i, arquivo] of arquivos.entries()) {
+        setProgresso(`Enviando ${i + 1} de ${arquivos.length}: ${arquivo.name}`);
+        const titulo = tituloDoArquivo(arquivo.name);
+        const codigo = codigoDoTitulo(titulo);
+        const antigos = codigo
+          ? lista.filter((d) => d.categoria === categoria && codigoDoTitulo(d.titulo) === codigo)
+          : [];
+        let resultado: Resultado;
+        if (modoLocal) {
+          const dados = new FormData();
+          dados.set("categoria", categoria);
+          dados.set("titulo", titulo);
+          dados.set("arquivo", arquivo);
+          resultado = await enviarLocal(dados);
+        } else {
+          const link = await prepararEnvio(categoria, arquivo.name);
+          if (!link.ok) {
+            falhas.push(`${arquivo.name} (${link.erro})`);
+            continue;
+          }
+          const cliente = createBrowserClient(supabase.url, supabase.chave);
+          const { error } = await cliente.storage
+            .from("documentos")
+            .uploadToSignedUrl(link.caminho, link.token, arquivo);
+          if (error) {
+            falhas.push(`${arquivo.name} (${error.message})`);
+            continue;
+          }
+          resultado = await registrarEnvio({ titulo, descricao: "", categoria, caminho: link.caminho });
+        }
+        if (!resultado.ok) {
+          falhas.push(`${arquivo.name} (${resultado.erro})`);
+          continue;
+        }
+        lista = resultado.documentos;
+        for (const antigo of antigos) {
+          const r = await removerDocumento(antigo.id);
+          if (r.ok) {
+            lista = r.documentos;
+            substituidos++;
+          }
+        }
+        setDocumentos(lista);
+      }
+      setProgresso(null);
+      const enviados = arquivos.length - falhas.length;
+      setResumoLote({
+        erro: falhas.length > 0,
+        texto:
+          `${enviados} de ${arquivos.length} enviados` +
+          (substituidos ? `, ${substituidos} versões antigas substituídas` : "") +
+          "." +
+          (falhas.length ? ` Não enviados: ${falhas.join("; ")}` : ""),
+      });
+      if (falhas.length === 0) loteRef.current?.reset();
     });
   }
 
@@ -150,6 +230,7 @@ export function Editor({
       </ul>
 
       <div className="grid gap-6 lg:grid-cols-[360px_1fr]">
+        <div className="h-fit space-y-6">
         <form
           ref={formRef}
           action={enviar}
@@ -210,6 +291,64 @@ export function Editor({
             </p>
           )}
         </form>
+
+        <form
+          ref={loteRef}
+          action={enviarLote}
+          className="h-fit space-y-3 rounded-lg border border-t-[3px] border-slate-200 border-t-teal-700 bg-white p-5"
+        >
+          <h2 className="flex items-center gap-2 font-semibold text-slate-900">
+            <Upload aria-hidden className="h-4 w-4 text-teal-700" />
+            Vários documentos
+          </h2>
+          <p className="text-xs text-slate-500">
+            O título vem do nome do arquivo (ex.: &quot;POP 02 - SEPSE.pdf&quot;). Se a
+            categoria já tiver o mesmo POP, a versão antiga é substituída.
+          </p>
+          <label className="block text-sm text-slate-600">
+            Categoria
+            <select
+              name="categoria"
+              required
+              defaultValue={filtro ?? ""}
+              key={filtro}
+              className={`${campo} mt-1`}
+            >
+              <option value="" disabled>
+                Selecione…
+              </option>
+              {CATEGORIAS.map((c) => (
+                <option key={c.slug} value={c.slug}>
+                  {nomeCategoria(c)}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label className="block text-sm text-slate-600">
+            Arquivos
+            <input
+              name="arquivos"
+              type="file"
+              multiple
+              required
+              className="mt-1 block w-full text-sm text-slate-600 file:mr-3 file:rounded-md file:border-0 file:bg-teal-50 file:px-3 file:py-2 file:font-medium file:text-teal-700 hover:file:bg-teal-100"
+            />
+          </label>
+          <button
+            type="submit"
+            disabled={pendente}
+            className="w-full rounded-lg bg-teal-700 px-4 py-2 text-sm font-semibold text-white hover:bg-teal-800 disabled:opacity-60"
+          >
+            {pendente ? "Enviando…" : "Enviar todos"}
+          </button>
+          {progresso && <p className="text-sm text-slate-600">{progresso}</p>}
+          {resumoLote && (
+            <p className={`text-sm ${resumoLote.erro ? "text-red-600" : "text-teal-700"}`}>
+              {resumoLote.texto}
+            </p>
+          )}
+        </form>
+        </div>
 
         <section className="rounded-lg border border-slate-200 bg-white">
           <div className="flex items-center justify-between border-b border-slate-200 px-5 py-3">
@@ -325,4 +464,19 @@ function CartaoContagem({
       </span>
     </button>
   );
+}
+
+/** "POP 02 - SEPSE.pdf" vira "POP 02 – SEPSE". */
+function tituloDoArquivo(nome: string) {
+  return nome
+    .replace(/\.[^.]+$/, "")
+    .replace(/_/g, " ")
+    .replace(/^((?:POP|FX)\s*\d+)\s*[-–]\s*/i, "$1 – ")
+    .trim();
+}
+
+/** "POP 2 – Sepse" e "POP 02 - SEPSE" viram "POP 2". */
+function codigoDoTitulo(titulo: string) {
+  const m = titulo.match(/^(POP|FX)\s*0*(\d+)\b/i);
+  return m ? `${m[1].toUpperCase()} ${m[2]}` : null;
 }
