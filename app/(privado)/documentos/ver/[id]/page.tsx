@@ -49,8 +49,8 @@ async function Visualizador({ params }: Props) {
         </h2>
       </div>
 
-      {/* #toolbar=0 esconde a barra do leitor de PDF (botões de baixar e imprimir). */}
-      <LeitorPdf src={`${arquivo}#toolbar=0&navpanes=0`} titulo={documento.titulo} />
+      {/* O PDF é desenhado pelo próprio site: abre na tela, sem baixar. */}
+      <LeitorPdf src={arquivo} titulo={documento.titulo} />
     </section>
   );
 }
