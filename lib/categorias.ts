@@ -5,6 +5,7 @@ import {
   ArrowLeftRight,
   ClipboardList,
   Database,
+  FileCheck,
   Pill,
   Workflow,
   type LucideIcon,
@@ -47,6 +48,13 @@ export const CATEGORIAS: Categoria[] = [
     titulo: "Manuais",
     descricao: "Manuais institucionais e de setores",
     icone: BookOpen,
+  },
+  {
+    slug: "check-list-e-termos",
+    perfis: ["medicos", "enfermagem"],
+    titulo: "Check list e termos",
+    descricao: "Check lists e termos institucionais",
+    icone: FileCheck,
   },
   {
     slug: "transicao",
