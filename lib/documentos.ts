@@ -21,15 +21,17 @@ export type Documento = {
 /** Título e categoria de um documento, para o visualizador. */
 export async function buscarDocumento(
   id: string,
-): Promise<{ titulo: string; categoria: string | null } | null> {
+): Promise<{ titulo: string; categoria: string | null; caminho: string } | null> {
   if (modoLocal) {
     const doc = buscarDocumentoLocal(Number(id));
-    return doc ? { titulo: doc.titulo, categoria: null } : null;
+    return doc
+      ? { titulo: doc.titulo, categoria: null, caminho: doc.caminho }
+      : null;
   }
   const supabase = await createClient();
   const { data } = await supabase
     .from("documentos")
-    .select("titulo, categoria")
+    .select("titulo, categoria, caminho")
     .eq("id", id)
     .maybeSingle();
   return data;

@@ -49,8 +49,24 @@ async function Visualizador({ params }: Props) {
         </h2>
       </div>
 
-      {/* O PDF é desenhado pelo próprio site: abre na tela, sem baixar. */}
-      <LeitorPdf src={arquivo} titulo={documento.titulo} />
+      {/* O PDF é desenhado pelo próprio site: abre na tela, sem baixar.
+          Word, Excel e PowerPoint não abrem aqui e são oferecidos para download. */}
+      {documento.caminho.toLowerCase().endsWith(".pdf") ? (
+        <LeitorPdf src={arquivo} titulo={documento.titulo} />
+      ) : (
+        <div className="flex flex-1 flex-col items-center justify-center gap-4 rounded-lg border border-slate-200 bg-white p-6 text-center">
+          <p className="text-sm text-slate-500">
+            Este arquivo não abre na tela. Baixe para visualizar ou preencher.
+          </p>
+          <a
+            href={arquivo}
+            download
+            className="rounded-lg bg-teal-700 px-4 py-2 text-sm font-semibold text-white hover:bg-teal-800"
+          >
+            Baixar arquivo
+          </a>
+        </div>
+      )}
     </section>
   );
 }
