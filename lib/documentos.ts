@@ -1,11 +1,3 @@
-import {
-  buscarArquivoDrive,
-  categoriaDoArquivo,
-  listarPdfsDaPasta,
-  pastaDaCategoria,
-  PREFIXO_DRIVE,
-  tituloDoArquivo,
-} from "./drive";
 import { buscarDocumentoLocal, listarDocumentosLocais } from "./local/banco";
 import { modoLocal } from "./supabase/config";
 import { createClient } from "./supabase/server";
@@ -24,11 +16,6 @@ export type Documento = {
 export async function buscarDocumento(
   id: string,
 ): Promise<{ titulo: string; categoria: string | null } | null> {
-  if (id.startsWith(PREFIXO_DRIVE)) {
-    const arquivo = await buscarArquivoDrive(id.slice(PREFIXO_DRIVE.length));
-    const categoria = arquivo && categoriaDoArquivo(arquivo);
-    return arquivo && categoria ? { titulo: tituloDoArquivo(arquivo.nome), categoria } : null;
-  }
   if (modoLocal) {
     const doc = buscarDocumentoLocal(Number(id));
     return doc ? { titulo: doc.titulo, categoria: null } : null;
@@ -46,38 +33,6 @@ export async function buscarDocumento(
 export async function listarDocumentos(
   categoria: string,
 ): Promise<Documento[] | null> {
-  const pasta = pastaDaCategoria(categoria);
-  if (!pasta) return listarDoBanco(categoria);
-
-  // Categoria ligada a uma pasta do Drive: a pasta é a fonte da lista.
-  // Documentos antigos do banco só aparecem se o mesmo código (ex.: POP 02)
-  // não estiver na pasta, para não duplicar.
-  const [doDrive, doBanco] = await Promise.all([
-    listarPdfsDaPasta(pasta),
-    listarDoBanco(categoria),
-  ]);
-  if (!doDrive) return doBanco;
-  const documentosDrive: Documento[] = doDrive.map((arquivo) => ({
-    id: `${PREFIXO_DRIVE}${arquivo.id}`,
-    titulo: tituloDoArquivo(arquivo.nome),
-    descricao: null,
-    link: `/documentos/arquivo/${PREFIXO_DRIVE}${arquivo.id}`,
-  }));
-  const codigos = new Set(documentosDrive.map((d) => codigoDoTitulo(d.titulo)).filter(Boolean));
-  const extras = (doBanco ?? []).filter((d) => {
-    const codigo = codigoDoTitulo(d.titulo);
-    return !codigo || !codigos.has(codigo);
-  });
-  return [...documentosDrive, ...extras];
-}
-
-/** "POP 2 – Sepse" e "POP 02 - SEPSE" viram "POP 2". */
-function codigoDoTitulo(titulo: string) {
-  const m = titulo.match(/^(POP|FX)\s*0*(\d+)/i);
-  return m ? `${m[1].toUpperCase()} ${m[2]}` : null;
-}
-
-async function listarDoBanco(categoria: string): Promise<Documento[] | null> {
   if (modoLocal) {
     return listarDocumentosLocais(categoria).map((doc) => ({
       id: String(doc.id),

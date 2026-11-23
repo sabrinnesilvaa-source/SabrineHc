@@ -2,12 +2,6 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { perfilDe, usuarioAtual, type Perfil } from "@/lib/auth";
 import { podeVerCategoria } from "@/lib/categorias";
-import {
-  baixarArquivoDrive,
-  buscarArquivoDrive,
-  categoriaDoArquivo,
-  PREFIXO_DRIVE,
-} from "@/lib/drive";
 import { buscarDocumentoLocal, PASTA_ARQUIVOS } from "@/lib/local/banco";
 import { modoLocal } from "@/lib/supabase/config";
 import { createClient } from "@/lib/supabase/server";
@@ -24,14 +18,6 @@ const TIPOS: Record<string, string> = {
 };
 
 async function lerArquivo(id: string, perfil: Perfil) {
-  if (id.startsWith(PREFIXO_DRIVE)) {
-    // Só entrega arquivos que estão numa pasta ligada a uma categoria.
-    const arquivo = await buscarArquivoDrive(id.slice(PREFIXO_DRIVE.length));
-    const categoria = arquivo && categoriaDoArquivo(arquivo);
-    if (!arquivo || !categoria || !podeVerCategoria(perfil, categoria)) return null;
-    const conteudo = await baixarArquivoDrive(arquivo.id);
-    return conteudo && { conteudo, caminho: arquivo.nome };
-  }
   if (modoLocal) {
     const documento = buscarDocumentoLocal(Number(id));
     if (!documento) return null;
