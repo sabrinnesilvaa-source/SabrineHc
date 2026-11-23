@@ -21,6 +21,8 @@ export type Categoria = {
   paginas?: { href: string; titulo: string; descricao: string }[];
   // Perfis (além de admin e supervisão, que veem tudo) que enxergam a categoria.
   perfis: Perfil[];
+  // Só o admin vê, nem a supervisão. Manter igual às regras em supabase/schema.sql.
+  somenteAdmin?: boolean;
   // Slug da categoria-mãe: subcategorias aparecem dentro dela, não no menu.
   pai?: string;
 };
@@ -66,7 +68,8 @@ export const CATEGORIAS: Categoria[] = [
   {
     slug: "transicao-demonstrativo-de-pagamento",
     pai: "transicao",
-    perfis: ["medicos", "enfermagem"],
+    perfis: [],
+    somenteAdmin: true, // valores de pagamento por profissional
     titulo: "Demonstrativo de pagamento",
     descricao: "Transição · Demonstrativo de pagamento",
     icone: ArrowLeftRight,
@@ -183,8 +186,9 @@ export const CATEGORIAS: Categoria[] = [
 const VEEM_TUDO: Perfil[] = ["admin", "supervisao"];
 
 export function podeVerCategoria(perfil: Perfil, slug: string | null | undefined) {
-  if (VEEM_TUDO.includes(perfil)) return true;
   const categoria = CATEGORIAS.find((c) => c.slug === slug);
+  if (categoria?.somenteAdmin) return perfil === "admin";
+  if (VEEM_TUDO.includes(perfil)) return true;
   return Boolean(categoria?.perfis.includes(perfil));
 }
 

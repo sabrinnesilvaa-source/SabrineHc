@@ -17,7 +17,10 @@ drop policy if exists "Usuarios logados leem documentos" on public.documentos;
 create policy "Usuarios logados leem documentos"
   on public.documentos for select
   to authenticated
-  using (true);
+  using (
+    categoria <> 'transicao-demonstrativo-de-pagamento'
+    or split_part(auth.jwt() ->> 'email', '@', 1) = 'admin'
+  );
 
 -- Bucket privado onde ficam os arquivos.
 insert into storage.buckets (id, name, public)
@@ -28,7 +31,13 @@ drop policy if exists "Usuarios logados leem arquivos" on storage.objects;
 create policy "Usuarios logados leem arquivos"
   on storage.objects for select
   to authenticated
-  using (bucket_id = 'documentos');
+  using (
+    bucket_id = 'documentos'
+    and (
+      split_part(name, '/', 1) <> 'transicao-demonstrativo-de-pagamento'
+      or split_part(auth.jwt() ->> 'email', '@', 1) = 'admin'
+    )
+  );
 
 -- Almoxarifado: itens e movimentações (entrada, saída e ajuste de inventário).
 -- O saldo de cada item é a soma dos movimentos; nada é apagado, o estorno

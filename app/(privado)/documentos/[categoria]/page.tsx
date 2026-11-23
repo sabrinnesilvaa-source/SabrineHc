@@ -24,16 +24,19 @@ async function DocumentosDaCategoria({ params }: Props) {
   const { categoria: slug } = await params;
   const categoria = CATEGORIAS.find((c) => c.slug === slug);
   if (!categoria) notFound();
-  if (!podeVerCategoria(perfilDe(await usuarioAtual()), slug)) redirect("/menu");
+  const perfil = perfilDe(await usuarioAtual());
+  if (!podeVerCategoria(perfil, slug)) redirect("/menu");
 
   const arquivos = await listarDocumentos(categoria.slug);
-  const filhas = subcategorias(categoria.slug).map((c) => ({
-    id: c.slug,
-    titulo: c.titulo,
-    descricao: c.descricao,
-    link: `/documentos/${c.slug}`,
-    interno: true,
-  }));
+  const filhas = subcategorias(categoria.slug)
+    .filter((c) => podeVerCategoria(perfil, c.slug))
+    .map((c) => ({
+      id: c.slug,
+      titulo: c.titulo,
+      descricao: c.descricao,
+      link: `/documentos/${c.slug}`,
+      interno: true,
+    }));
   const pai = categoria.pai && CATEGORIAS.find((c) => c.slug === categoria.pai);
   const paginas = (categoria.paginas ?? []).map((pagina) => ({
     id: pagina.href,
